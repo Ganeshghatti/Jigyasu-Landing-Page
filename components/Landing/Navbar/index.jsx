@@ -20,9 +20,9 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="flex flex-1 items-center justify-between">
-                <div className="flex flex-shrink-0 items-center">
+            <div className="relative py-5 flex items-center justify-between">
+              <div className="flex items-center justify-between w-full">
+                <div className="">
                   <Image
                     className="h-10 w-auto"
                     src="/logo.png"
@@ -32,30 +32,30 @@ export default function Navbar() {
                     quality={95}
                   />
                 </div>
-                <div className="hidden md:flex md:items-center  md:space-x-4 ml-auto">
+                <div className="hidden md:flex items-center gap-8">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
                       className={classNames(
                         item.current
-                          ? "text-blue"
-                          : "text-blue hover:text-primary",
-                        "rounded-md px-3 py-2 font-bold text-md md:text-sm"
+                          ? "text-border_color"
+                          : "text-border_color font-semibold",
+                        "text-border_color font-semibold"
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
                     </a>
                   ))}
-                  <div className="flex items-center gap-5">
-                    <button className="border border-border_color font-bold py-2 px-6 rounded-full text-md md:text-sm">
-                      Pricing
-                    </button>
-                    <button className="bg-carrotColor  hover:bg-carrotColor_hover text-white font-bold py-2 px-4 rounded-full text-md md:text-sm">
-                      Book Demo
-                    </button>
-                  </div>
+                </div>
+                <div className="gap-5 hidden md:flex items-center ">
+                  <button className="border border-border_color font-bold py-1 px-6 rounded-full text-md md:text-sm text-border_color">
+                    Pricing
+                  </button>
+                  <button className="bg-carrotColor  hover:bg-carrotColor_hover text-white font-bold py-1 border border-carrotColor px-4 rounded-full text-md md:text-sm">
+                    Book Demo
+                  </button>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center md:hidden">

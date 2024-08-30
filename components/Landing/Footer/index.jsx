@@ -38,21 +38,25 @@ export default function Footer() {
         </div>
         <div className="text-white flex items-start md:items-center flex-col">
           <ul>
-            <span className="text-amber-500">Link</span>
+            <span className="text-amber-500 text-base font-semibold">Link</span>
             {navigation?.map((each, index) => (
               <li key={index}>
-                <Link href={each?.href}>{each?.name}</Link>
+                <Link href={each?.href} className="text-base">
+                  {each?.name}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
-        <div className="flex flex-col text-white items-start md:items-center">
+        <div className="flex flex-col text-white items-start text-base">
           <span>Disclaimer</span>
           <span>Privacy Policy</span>
           <span>Terms & Conditions</span>
         </div>
         <div className="text-white space-y-5">
-          <span className="text-amber-500 text-lg">Contact Details</span>
+          <span className="text-amber-500 text-base font-semibold">
+            Contact Details
+          </span>
           <span className="flex items-center gap-2">
             <FaPhone className="text-amber-500" />
             <span>+91 99987823</span>

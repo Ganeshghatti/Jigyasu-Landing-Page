@@ -12,11 +12,21 @@ export default function Hero() {
           <button className="btn w-56 bg-[#FFDE95] bg-opacity-20 text-[#F8C24B] font-sans text-[18px] border-none hover:bg-stone-50 hover:text-black capitalize rounded-full h-10  md:mb-0">
             <b>LEARNING BY DOING</b>
           </button>
-          <p className="text-[52px] leading-tight font-sans text-white md:text-[64px]">
-            <b>
-              A New Way <br /> of Learning
-            </b>
-          </p>
+          <div className="flex flex-row items-end">
+            <p className="text-[52px] leading-tight font-sans text-white md:text-[64px]">
+              <b>
+                A New Way <br /> of Learning
+              </b>
+            </p>
+            <Image
+              src={"/assets/Ellipse22_1.png"}
+              alt="Ellipse 22_1"
+              width={20}
+              height={20}
+              quality={95}
+            />
+          </div>
+
           <p className="text-[16.1px] font-source font-sans text-[#F3F3F3] md:text-[18px] md:pr-40 mt-4">
             Hands-on methods to drive student success and engagement, empowering
             learners through the power of active learning for academic
