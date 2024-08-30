@@ -16,7 +16,7 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 
 // import required modules
-import { Grid, Pagination } from "swiper/modules";
+import { Grid, Pagination, Navigation } from "swiper/modules";
 import { logosPartners } from "@/constants";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
@@ -436,9 +436,9 @@ export default function About() {
 
       {/* Why Choose Us */}
 
-      <div className="container mx-auto md:my-0 my-10 bg-cover bg-cream  py-10  md:py-24 bg-center bg-no-repeat">
+      <div className="container mx-auto md:my-0 my-10 bg-cover bg-cream  py-10  md:py-24 bg-center bg-no-repeat w-full">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:pl-32 md:text-left">
-          <div className="">
+          <div className="w-full">
             <p className="text-[#ED5251] font-sans">
               <b>WHY CHOOSE US</b>
             </p>
@@ -448,8 +448,8 @@ export default function About() {
               </b>
             </p>
             <div className="flex flex-col-reverse md:flex-row gap-6 text-left md:text-left">
-              <div className=" flex flex-col md:flex-row">
-                <div className="">
+              <div className=" flex flex-col lg:flex-row max-md:order-2">
+                <div className="flex flex-col">
                   <div className="flex flex-row">
                     <div className=" px-2 md:px-3 pt-1">
                       <FaCheck
@@ -540,11 +540,14 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="md:w-full mt-8 md:mt-0  md:p md:pt-0 image-container">
-                <img
-                  className="w-auto h-auto object-cover"
+              <div className="md:w-full mt-8 md:mt-0  md:p md:pt-0 image-container max-md:order-1">
+                <Image
+                  className="w-auto h-auto object-cover max-lg:hidden"
                   src="/assets/why choose us image.png"
                   alt="Image 2"
+                  width={300}
+                  height={300}
+                  quality={95}
                 />
               </div>
             </div>
@@ -734,35 +737,143 @@ export default function About() {
       </div>
 
       {/* --------------SLIDER GALLERY----------------- */}
+
       <div className="container mx-auto">
-        <>
-          <Swiper
-            slidesPerView={3}
-            grid={{
-              rows: 2,
-            }}
-            spaceBetween={0}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Grid, Pagination]}
-            className="mySwiper"
-          >
-            {images?.map((each, index) => (
-              <div className="grid grid-cols-2" key={index}>
-                <SwiperSlide>
-                  <Image
-                    src={each?.src}
-                    alt={each?.alt}
-                    width={300}
-                    height={300}
-                    quality={95}
-                  />
-                </SwiperSlide>
+        <Swiper
+          slidesPerView={5}
+          spaceBetween={5}
+          navigation={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <div>
+            <SwiperSlide>
+              <Image
+                src="/assets/our gallery image1.png"
+                alt="image"
+                width={300}
+                height={300}
+                quality={95}
+              />
+            </SwiperSlide>
+          </div>
+          <div className="flex flex-col items-center gap-5">
+            <SwiperSlide>
+              <div className="flex flex-col items-center gap-2">
+                <Image
+                  src="/assets/our gallery image2.png"
+                  alt="image"
+                  width={300}
+                  height={300}
+                  quality={95}
+                />
+                <Image
+                  src="/assets/our gallery image3.png"
+                  alt="image"
+                  width={300}
+                  height={300}
+                  quality={95}
+                />
               </div>
-            ))}
-          </Swiper>
-        </>
+            </SwiperSlide>
+          </div>
+          <div>
+            <SwiperSlide>
+              <Image
+                src="/assets/our gallery image4.png"
+                alt="image"
+                width={300}
+                height={300}
+                quality={95}
+              />
+            </SwiperSlide>
+          </div>
+          <div className="flex flex-col items-center gap-5">
+            <SwiperSlide>
+              <div className="flex flex-col items-center gap-2">
+                <Image
+                  src="/assets/our gallery image2.png"
+                  alt="image"
+                  width={300}
+                  height={300}
+                  quality={95}
+                />
+                <Image
+                  src="/assets/our gallery image3.png"
+                  alt="image"
+                  width={300}
+                  height={300}
+                  quality={95}
+                />
+              </div>
+            </SwiperSlide>
+          </div>
+          <div>
+            <SwiperSlide>
+              <Image
+                src="/assets/our gallery image4.png"
+                alt="image"
+                width={300}
+                height={300}
+                quality={95}
+              />
+            </SwiperSlide>
+          </div>
+          <div className="flex flex-col items-center gap-5">
+            <SwiperSlide>
+              <div className="flex flex-col items-center gap-2">
+                <Image
+                  src="/assets/our gallery image2.png"
+                  alt="image"
+                  width={300}
+                  height={300}
+                  quality={95}
+                />
+                <Image
+                  src="/assets/our gallery image3.png"
+                  alt="image"
+                  width={300}
+                  height={300}
+                  quality={95}
+                />
+              </div>
+            </SwiperSlide>
+          </div>
+          <div>
+            <SwiperSlide>
+              <Image
+                src="/assets/our gallery image1.png"
+                alt="image"
+                width={300}
+                height={300}
+                quality={95}
+              />
+            </SwiperSlide>
+          </div>
+          <div className="flex flex-col items-center gap-5">
+            <SwiperSlide>
+              <div className="flex flex-col items-center gap-2">
+                <Image
+                  src="/assets/our gallery image2.png"
+                  alt="image"
+                  width={300}
+                  height={300}
+                  quality={95}
+                />
+                <Image
+                  src="/assets/our gallery image3.png"
+                  alt="image"
+                  width={300}
+                  height={300}
+                  quality={95}
+                />
+              </div>
+            </SwiperSlide>
+          </div>
+        </Swiper>
       </div>
       {/* -------------Our TESTIMONIAL------------------ */}
       <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16">
@@ -946,7 +1057,7 @@ export default function About() {
                 </li>
               </ul>
             </div>
-            <button className="bg-border_color px-6 py-2 rounded-full text-white my-10 mx-10">
+            <button className="bg-border_color px-6 py-2 rounded-full text-white my-10 mx-10 ">
               Contact us
             </button>
           </div>
@@ -1014,7 +1125,7 @@ export default function About() {
               </ul>
             </div>
             <div className="my-10 mx-10 flex flex-col md:flex-row  items-center gap-5">
-              <button className="bg-[#342d6f9f] px-6 py-2 rounded-full text-border_color">
+              <button className="bg-[#342d6f9f] px-6 py-2 rounded-full text-white">
                 Calculate Budget
               </button>
               <button className="bg-border_color px-6 py-2 rounded-full text-white">
