@@ -2,6 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import "./about-style.css";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -710,13 +712,37 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="md:w-full mt-8 md:mt-0  md:p md:pt-0 image-container max-md:order-1 container mx-auto">
+              <div className="md:w-full mt-8 md:mt-0  md:p md:pt-0 image-container max-md:order-1 container mx-auto relative">
                 <Image
-                  className=""
+                  className="relative z-50"
                   src="/assets/why choose us image.png"
                   alt="Image 2"
                   width={400}
                   height={400}
+                  quality={95}
+                />
+                <Image
+                  className="absolute left-[50%] bottom-3 "
+                  src={"/assets/Rectangle91.png"}
+                  alt="Rectangle91"
+                  width={80}
+                  height={80}
+                  quality={95}
+                />
+                <Image
+                  className="absolute left-[70%] -bottom-[10%]"
+                  src={"/assets/Ellipse46.png"}
+                  alt="Ellipse46"
+                  width={40}
+                  height={40}
+                  quality={95}
+                />
+                <Image
+                  className="absolute bottom-0 -left-3 hidden md:block z-[10000]"
+                  src={"/assets/2label_1.png"}
+                  alt="Label"
+                  width={300}
+                  height={150}
                   quality={95}
                 />
               </div>
@@ -861,7 +887,7 @@ export default function About() {
 
       {/* UNLOCK BENEFITS ---------------------------------*/}
 
-      <div className="bg-[#FFDE95] bg-opacity-15 py-10">
+      {/* <div className="bg-[#FFDE95] bg-opacity-15 py-10">
         <div className="container mx-auto md:pl-28">
           <div className="flex flex-col items-center md:flex-row justify-between md:pl-4  ">
             <div className="flex flex-col gap-4 md:pb-28 text-center pt-10 md:pt-20 md:text-left">
@@ -926,6 +952,76 @@ export default function About() {
             </div>
           </div>
         </div>
+      </div> */}
+
+      {/* UNLOCK BENEFITS ---------------------------------*/}
+
+      <div className="bg-[#FFDE95] bg-opacity-15 py-10 unlock-benifits-section">
+        <div className="container mx-auto">
+          <div className="flex flex-col items-center md:flex-row justify-between md:pl-4  ">
+            <div className="flex flex-col gap-4 md:pb-28 text-center pt-10 md:pt-20 md:text-left">
+              <p className="text-[#2C7698] font-bold text-lg">
+                UNLOCK BENEFITS
+              </p>
+              <p className="text-[#ED5251] font-bold text-4xl flex flex-col">
+                Our Student's Journey{" "}
+                <span className="flex items-center gap-2">
+                  Over a Span of time
+                  <span className="hidden md:block">
+                    <Image
+                      src={"/assets/Ellipse22_1.png"}
+                      alt="Ellipse22_1"
+                      width={15}
+                      height={15}
+                      quality={95}
+                    />
+                  </span>
+                </span>
+              </p>
+              <div className="flex flex-col-reverse md:flex-row md:gap-20 text-left md:text-left pl-14">
+                <div className="flex flex-col md:flex-row">
+                  <ul className="list-disc marker:text-yellow-400 marker:text-3xl text-[#2C7698] lg:w-96">
+                    <li className="font-semibold text-base">
+                      Increase in visualization capacity
+                    </li>
+                    <li className="font-semibold text-base">
+                      Students develop experimental skills
+                    </li>
+                    <li className="font-semibold text-base">
+                      Deeper understanding, longer retention
+                    </li>
+                  </ul>
+                </div>
+                <div className=" md:pl flex flex-col md:flex-row">
+                  <ul className="list-disc marker:text-yellow-400 marker:text-3xl text-[#2C7698] lg:w-96">
+                    <li className="font-semibold text-base">
+                      Application of science concepts to real world scenarios
+                    </li>
+                    <li className="font-semibold text-base">
+                      Skill addition relevant to industry
+                    </li>
+                    <li className="font-semibold text-base">
+                      Product development experience
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button className="btn hidden md:block bg-[#ED5251] mx-16 md:mx-0 md:mt-10 w-auto justify-center md:justify-normal md:w-40 h-10 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full">
+                Contact us
+              </button>
+            </div>
+            {/* <div className="w-full">
+              <Image
+                className=" text-white w-full"
+                src="/assets/unlock benefits.png"
+                width={400}
+                height={400}
+                quality={95}
+              />
+            </div> */}
+          </div>
+        </div>
+              
       </div>
 
       {/* ------------------ ----------------*/}
@@ -1097,7 +1193,10 @@ export default function About() {
           </div>
         </Swiper>
       </div>
+
       {/* -------------Our TESTIMONIAL------------------ */}
+      {/* 
+
       <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16">
         <div className="container mx-auto md:px-28 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
           <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
@@ -1220,6 +1319,132 @@ export default function About() {
             </div>
           </div>
         </div>
+      </div> */}
+
+      {/* -------------Our TESTIMONIAL------------------ */}
+      <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16">
+        <div className="container mx-auto md:px-10 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
+          <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
+            <div className="flex flex-col gap-4 text-center md:text-left">
+              <p className="text-[#ED5251] font-semibold text-xl">
+                OUR TESTIMONIAL
+              </p>
+              <p className="text-[#342D6F] font-bold text-4xl flex items-center gap-2">
+                What they say about our platform{" "}
+                <span>
+                  {" "}
+                  <Image
+                    src={"/assets/Ellipse38_1.png"}
+                    alt="Ellipse38_1"
+                    width={15}
+                    height={15}
+                    quality={95}
+                  />
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center w-full border justify-around gap-10 md:flex-row container mx-auto">
+            <div className="flex flex-col p-4">
+              <div className="flex flex-row">
+                <div className=" px-2  pt-1">
+                  <img
+                    className="h-8 w-8 bg-blue text-white rounded-full"
+                    src="/assets/our testimonial image1.png"
+                  />
+                </div>
+                <div>
+                  <p className="text-[#ED5251] font-sans">
+                    <b>Riddhi Singh</b>
+                  </p>
+                  <p className="text-[16px] pr-4 pb-6 font-sans text-[#342D6F]">
+                    Physics Teacher
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-[#342D6F] font-semibold text-base">
+                  <b>
+                    “There are alot of models to explore which helps in
+                    understanding concept”
+                  </b>
+                </p>
+                <p className="text-[15px] pb-6 md:pb-14 font-sans text-[#342D6F]">
+                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                  cursus egestas at ut elit. Id nec metus pharetra sit at
+                  nam.Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="flex flex-row">
+                <div className=" px-2 md:px-3 pt-1">
+                  <img
+                    className="h-8 w-8 bg-blue text-white rounded-full"
+                    src="/assets/our testimonial image2.png"
+                  />
+                </div>
+                <div>
+                  <p className="text-[#ED5251] font-sans">
+                    <b>Riddhi Singh</b>
+                  </p>
+                  <p className="text-[16px] pb-6 font-sans text-[#342D6F]">
+                    Physics Teacher
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-[#342D6F] text-[15px] font-sans">
+                  <b>
+                    “There are alot of models to explore which helps in
+                    understanding concept”
+                  </b>
+                </p>
+                <p className="text-[15px] pb-6 md:pb-14 font-sans text-[#342D6F]">
+                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
+                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="flex flex-row">
+                <div className="px-2 md:px-3 pt-1">
+                  <img
+                    className="h-8 w-8 bg-blue text-white rounded-full"
+                    src="/assets/our testimonial image3.png"
+                  />
+                </div>
+                <div>
+                  <p className="text-[#ED5251] font-sans">
+                    <b>Riddhi Singh</b>
+                  </p>
+                  <p className="text-[16px] pb-6 md:pb-6 font-sans text-[#342D6F]">
+                    Physics Teacher
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-[#342D6F] text-[15px] font-sans">
+                  <b>
+                    “There are alot of models to explore which helps in
+                    understanding concept”
+                  </b>
+                </p>
+                <p className="text-[16px] pb-6 md:pb-14 font-sans text-[#342D6F]">
+                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
+                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+              
       </div>
 
       {/* ------------Price Plan------------------- */}
