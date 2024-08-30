@@ -81,17 +81,114 @@ export default function About() {
         </div>
         <div className="container mx-auto h-32">
           <Marquee loop={0} pauseOnHover speed={100}>
-            {logosPartners?.map((each, index) => (
-              <div key={index}>
-                <Image
-                  src={each?.src}
-                  alt={each?.alt}
-                  width={150}
-                  height={150}
-                  quality={95}
-                />
-              </div>
-            ))}
+            <div>
+              <Image
+                src={"/assets/images/logo1.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo2.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo3.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo4.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo5.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo6.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo7.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo8.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo9.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo10.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo11.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
+            <div>
+              <Image
+                src={"/assets/images/logo12.png"}
+                alt={"school Partners"}
+                width={150}
+                height={150}
+                quality={95}
+              />
+            </div>
           </Marquee>
         </div>
       </div>
