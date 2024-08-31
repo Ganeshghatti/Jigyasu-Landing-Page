@@ -7,6 +7,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 
 const navigation = NAV_LINKS;
 
@@ -50,9 +51,12 @@ export default function Navbar() {
                   ))}
                 </div>
                 <div className="gap-5 hidden lg:flex items-center ">
-                  <button className="border border-border_color font-bold py-1 px-6 rounded-full text-md md:text-sm text-border_color">
+                  <Link
+                    href={"#pricing"}
+                    className="border border-border_color font-bold py-1 px-6 rounded-full text-md md:text-sm text-border_color"
+                  >
                     Pricing
-                  </button>
+                  </Link>
                   <button className="bg-carrotColor  hover:bg-carrotColor_hover text-white font-bold py-1 border border-carrotColor px-4 rounded-full text-md md:text-sm">
                     Book Demo
                   </button>
@@ -96,9 +100,9 @@ export default function Navbar() {
                   {item.name}
                 </DisclosureButton>
               ))}
-              <button className="w-full bg-primary hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-center">
-                Pricing
-              </button>
+              <div className="w-full bg-primary hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-center">
+                <Link href={"#pricing"}>Pricing</Link>
+              </div>
             </div>
           </DisclosurePanel>
         </>
