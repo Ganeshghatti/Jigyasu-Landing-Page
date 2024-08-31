@@ -18,7 +18,7 @@ import "swiper/css/grid";
 import "swiper/css/pagination";
 
 // import required modules
-import { Grid, Pagination, Navigation } from "swiper/modules";
+import { Grid, Pagination, Navigation, Autoplay } from "swiper/modules";
 import { logosPartners } from "@/constants";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
@@ -381,7 +381,7 @@ export default function About() {
 
       {/* Challenges We Address */}
 
-      <div className="py-20 relative bg-[#F5F5F5] overflow-hidden">
+      <div className="md:py-20 py-8 relative bg-[#F5F5F5] overflow-hidden">
         <div className="container mx-auto flex flex-col space-y-1">
           <div className="">
             <div className="space-y-3 max-md:text-center">
@@ -498,7 +498,7 @@ export default function About() {
 
       {/* Need of the hour */}
 
-      <div className="pr-10 py-10 max-md:text-center my-10">
+      <div className="pr-10 py-10 max-md:text-center md:my-10 my-0">
         <div className="container mx-auto space-y-8">
           <div className="flex items-center gap-2">
             <p className="text-carrotColor text-4xl capitalize font-bold ">
@@ -513,8 +513,8 @@ export default function About() {
               className="hidden md:block"
             />
           </div>
-          <div className="flex items-center justify-between flex-col md:flex-row gap-8">
-            <div className="space-y-6">
+          <div className="flex items-start justify-between flex-col md:flex-row gap-8">
+            <div className="space-y-3 md:space-y-6 text-left">
               <div>
                 <h3 className="text-border_color font-bold text-base">
                   Joyful & Stress-Free Learning
@@ -575,7 +575,7 @@ export default function About() {
 
       {/* STATISTICS */}
 
-      <div className="bg-carrotColor py-10">
+      <div className="bg-carrotColor py-2 md:py-10">
         <div className="container mx-auto text-white grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex items-center flex-col">
             <h1 className="md:text-[64px] text-[44px] font-extrabold">20K+</h1>
@@ -602,13 +602,13 @@ export default function About() {
 
       {/* Why Choose Us */}
 
-      <div className="md:my-0 my-10 bg-cover bg-cream  py-10  md:py-24 bg-center bg-no-repeat w-full">
+      <div className="md:my-0 my-10 bg-cover bg-cream  py-5  md:py-24 bg-center bg-no-repeat w-full">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:pl-32 md:text-left container mx-auto ">
           <div className="w-full">
             <p className="text-carrotColor md:text-[20px] font-semibold">
               <b>WHY CHOOSE US</b>
             </p>
-            <p className="md:text-4xl text-[25] py-5 text-[#342D6F] flex flex-col font-bold max-md:text-center uppercase">
+            <p className="md:text-4xl text-[25] py-2 text-[#342D6F] flex flex-col font-bold max-md:text-center uppercase">
               Unlock the Wonders of Science with
               <span className="flex items-center gap-1 max-md:text-center pl-12">
                 Engaging Hands-On Learning
@@ -623,8 +623,8 @@ export default function About() {
                 </span>
               </span>
             </p>
-            <div className="flex flex-col-reverse md:flex-row gap-6 text-left md:text-left py-8">
-              <div className=" flex flex-col lg:flex-row max-md:order-2">
+            <div className="flex flex-col-reverse md:flex-row gap-6 text-left md:text-left py-5">
+              <div className=" flex flex-col lg:flex-row md:order-1">
                 <div className="flex flex-col">
                   <div className="flex flex-row">
                     <div className=" px-2 md:px-3 pt-1">
@@ -716,7 +716,7 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="md:w-full mt-8 md:mt-0  md:p md:pt-0 image-container max-md:order-1 container mx-auto relative">
+              <div className="md:w-full mt-8 md:mt-0  md:p md:pt-0 image-container  container mx-auto relative md:order-2">
                 <Image
                   className="relative z-50"
                   src="/assets/why choose us image.png"
@@ -734,7 +734,7 @@ export default function About() {
                   quality={95}
                 />
                 <Image
-                  className="absolute left-[70%] -bottom-[10%]"
+                  className="absolute left-[70%] -bottom-[10%] hidden md:block"
                   src={"/assets/Ellipse46.png"}
                   alt="Ellipse46"
                   width={40}
@@ -757,14 +757,14 @@ export default function About() {
 
       {/* Explorer OUR MODEL */}
 
-      <div className="flex flex-col items-center md:flex-row justify-between md:pt-10 pt-5 py-10 ">
+      <div className="flex flex-col items-center md:flex-row justify-between pt-5 py-5 ">
         <div className="flex flex-col gap-4 text-center md:text-left md:px-24 container mx-auto">
-          <p className="text-lg font-semibold text-carrotColor">
+          <p className="text-[16px] md:text-[20px] font-semibold text-carrotColor">
             EXPLORE OUR MODELS
           </p>
-          <p className="text-border_color text-4xl font-bold flex flex-col">
+          <p className="text-border_color text-[25px] md:text-4xl font-bold flex flex-col max-md:text-center">
             Enhance Science Lessons{" "}
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-2 max-md:pl-8">
               with Engaging Models{" "}
               <span className="hidden md:block">
                 <Image
@@ -777,11 +777,10 @@ export default function About() {
               </span>
             </span>
           </p>
-          <p className="text-[#342D6F] text-base ">
+          <p className="text-[#342D6F] md:text-base text-[16px] max-md:text-pretty md:w-2/3">
             Our science models are a great way to engage students in hands-on
-            learning. Each model comes with a detailed
-            <br /> teacher guide and student activity guides to help you make
-            the most of your science lessons.
+            learning. Each model comes with a detailed teacher guide and student
+            activity guides to help you make the most of your science lessons.
           </p>
         </div>
       </div>
@@ -790,7 +789,7 @@ export default function About() {
         <div className="flex items-center mx-6 flex-row gap-10">
           <div>
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image1.png"
               alt="Image 2"
               width={80}
@@ -800,7 +799,7 @@ export default function About() {
           </div>
           <div>
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image2.png"
               alt="Image 2"
               width={80}
@@ -810,7 +809,7 @@ export default function About() {
           </div>
           <div>
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image3.png"
               alt="Image 2"
               width={80}
@@ -820,7 +819,7 @@ export default function About() {
           </div>
           <div>
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image4.png"
               alt="Image 2"
               width={80}
@@ -830,7 +829,7 @@ export default function About() {
           </div>
           <div>
             <Image
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image5.png"
               alt="Image 2"
               width={80}
@@ -843,7 +842,7 @@ export default function About() {
 
       {/* hands-on science */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-[#342D6F] px-6 md:px-36 py-0 pb-10 md:py-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-[#342D6F] px-6 md:px-36 py-0 pb-10 mt-20 md:py-28 relative ">
         <div className="flex flex-col-reverse container mx-auto">
           <div className="flex items-center pt-4 md:pt-0 space-y-5">
             <Image
@@ -855,6 +854,42 @@ export default function About() {
               quality={95}
             />
           </div>
+        </div>
+        <div className="absolute right-0 top-10 hidden lg:block">
+          <Image
+            src="/assets/Rectangle9212.png"
+            alt="ping yellow"
+            width={100}
+            height={100}
+            quality={95}
+          />
+        </div>
+        <div className="absolute top-8 md:hidden">
+          <Image
+            src="/assets/Ellipse5612.png"
+            alt="ping yellow"
+            width={30}
+            height={30}
+            quality={95}
+          />
+        </div>
+        <div className="absolute bottom-0 right-10 ">
+          <Image
+            src="/assets/Ellipse571.png"
+            alt="ping yellow"
+            width={80}
+            height={80}
+            quality={95}
+          />
+        </div>
+        <div className="absolute bottom-10 hidden lg:block">
+          <Image
+            src="/assets/Rectangle90124.png"
+            alt="ping yellow"
+            width={100}
+            height={100}
+            quality={95}
+          />
         </div>
         <div className="flex flex-col justify-center gap-4 text-center md:text-left md:pl-20 space-y-5">
           <p className="text-[#FFFFFF] font-bold text-4xl ">
@@ -1033,10 +1068,12 @@ export default function About() {
 
       <div className="flex flex-col items-center md:flex-row justify-between md:pt-20 py-10 pt-20 md:py-10 md:pl-16 ">
         <div className="flex flex-col gap-4 text-center md:text-left px-6 md:px-24">
-          <p className="text-[#ED5251] text-xl font-semibold">OUR GALLERY</p>
-          <p className="text-[#342D6F] font-bold text-4xl">
+          <p className="text-[#ED5251] md:text-xl text-base font-semibold">
+            OUR GALLERY
+          </p>
+          <p className="text-[#342D6F] font-bold md:text-4xl text-[25px] max-md:text-center">
             Students Discovering
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-1 max-md:pl-14">
               Science Firsthand
               <span className="hidden md:block">
                 <Image
@@ -1049,11 +1086,10 @@ export default function About() {
               </span>
             </span>
           </p>
-          <p className="text-[#342D6F] text-[11px] md:text-[16px] ">
+          <p className="text-[#342D6F] text-[11px] md:text-[16px] max-md:text-pretty md:w-2/3">
             Our science models are a great way to engage students in hands-on
-            learning. Each model comes with a detailed
-            <br /> teacher guide and student activity guides to help you make
-            the most of your science lessons.
+            learning. Each model comes with a detailed teacher guide and student
+            activity guides to help you make the most of your science lessons.
           </p>
         </div>
       </div>
@@ -1199,134 +1235,8 @@ export default function About() {
       </div>
 
       {/* -------------Our TESTIMONIAL------------------ */}
-      {/* 
-
-      <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16">
-        <div className="container mx-auto md:px-28 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
-          <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
-            <div className="flex flex-col gap-4 text-center md:text-left">
-              <p className="text-[#ED5251] font-semibold text-xl">
-                OUR TESTIMONIAL
-              </p>
-              <p className="text-[#342D6F] font-bold text-4xl flex items-center gap-2">
-                What they say about our platform{" "}
-                <span>
-                  {" "}
-                  <Image
-                    src={"/assets/Ellipse38_1.png"}
-                    alt="Ellipse38_1"
-                    width={15}
-                    height={15}
-                    quality={95}
-                  />
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center justify-around md:flex-row gap-4  container mx-auto">
-            <div className="flex flex-col w-full">
-              <div className="flex flex-row">
-                <div className=" px-2 md:px-3 pt-1">
-                  <img
-                    className="h-8 w-8 bg-blue text-white rounded-full"
-                    src="/assets/our testimonial image1.png"
-                  />
-                </div>
-                <div>
-                  <p className="text-[#ED5251] font-sans">
-                    <b>Riddhi Singh</b>
-                  </p>
-                  <p className="text-[16px] pr-4 md:pr-8 pb-6 md:pb-6 font-sans text-[#342D6F]">
-                    Physics Teacher
-                  </p>
-                </div>
-              </div>
-              <div>
-                <p className="text-[#342D6F] font-semibold text-base">
-                  <b>
-                    “There are alot of models to explore which helps in
-                    understanding concept”
-                  </b>
-                </p>
-                <p className="text-[15px] pr-4 md:mr-10 md:pr-20 pb-6 md:pb-14 font-sans text-[#342D6F]">
-                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
-                  cursus egestas at ut elit. Id nec metus pharetra sit at
-                  nam.Lorem ipsum dolor sit amet consectetur. Netus amet morbi
-                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col w-full">
-              <div className="flex flex-row">
-                <div className=" px-2 md:px-3 pt-1">
-                  <img
-                    className="h-8 w-8 bg-blue text-white rounded-full"
-                    src="/assets/our testimonial image2.png"
-                  />
-                </div>
-                <div>
-                  <p className="text-[#ED5251] font-sans">
-                    <b>Riddhi Singh</b>
-                  </p>
-                  <p className="text-[16px] pr-4 md:pr-8 pb-6 md:pb-6 font-sans text-[#342D6F]">
-                    Physics Teacher
-                  </p>
-                </div>
-              </div>
-              <div>
-                <p className="text-[#342D6F] md:mr-28 text-[15px] font-sans">
-                  <b>
-                    “There are alot of models to explore which helps in
-                    understanding concept”
-                  </b>
-                </p>
-                <p className="text-[15px] pr-4 md:mr-28 md:pr-8 pb-6 md:pb-14 font-sans text-[#342D6F]">
-                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
-                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
-                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
-                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col w-full">
-              <div className="flex flex-row">
-                <div className=" px-2 md:px-3 pt-1">
-                  <img
-                    className="h-8 w-8 bg-blue text-white rounded-full"
-                    src="/assets/our testimonial image3.png"
-                  />
-                </div>
-                <div>
-                  <p className="text-[#ED5251] font-sans">
-                    <b>Riddhi Singh</b>
-                  </p>
-                  <p className="text-[16px] pr-4 md:pr-16 pb-6 md:pb-6 font-sans text-[#342D6F]">
-                    Physics Teacher
-                  </p>
-                </div>
-              </div>
-              <div>
-                <p className="text-[#342D6F] md:mr-36 text-[15px] font-sans">
-                  <b>
-                    “There are alot of models to explore which helps in
-                    understanding concept”
-                  </b>
-                </p>
-                <p className="text-[16px] pr-4 md:mr-28 md:pr-8 pb-6 md:pb-14 font-sans text-[#342D6F]">
-                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
-                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
-                  Lorem ipsum dolor sit amet consectetur. Netus amet morbi
-                  cursus egestas at ut elit. Id nec metus pharetra sit at nam.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* -------------Our TESTIMONIAL------------------ */}
-      <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16">
+      {/* LARGE DEVICES */}
+      <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16 hidden md:block">
         <div className="container mx-auto md:px-10 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
           <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
             <div className="flex flex-col gap-4 text-center md:text-left">
@@ -1450,28 +1360,196 @@ export default function About() {
         </div>
               
       </div>
+      {/* SMALL DEVICES */}
+
+      <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16 md:hidden">
+        <div className="container mx-auto md:px-10 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
+          <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
+            <div className="flex flex-col gap-4 text-center md:text-left relative">
+              <p className="text-[#ED5251] font-semibold md:text-xl text-base">
+                OUR TESTIMONIAL
+              </p>
+              <p className="text-[#342D6F] font-bold md:text-4xl text-[25px]">
+                What they say about our platform{" "}
+                <span className="absolute md:bottom-0 max-md:bottom-3 ">
+                  {" "}
+                  <Image
+                    src={"/assets/Ellipse38_1.png"}
+                    alt="Ellipse38_1"
+                    width={10}
+                    height={10}
+                    quality={95}
+                  />
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div className="">
+            <Swiper
+              slidesPerView={1}
+              loop={true}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination, Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className="container mx-auto">
+                  {/* TEST _ 1 */}
+                  <div className="flex flex-col p-4">
+                    <div className="flex flex-row">
+                      <div className=" px-2  pt-1">
+                        <img
+                          className="h-8 w-8 bg-blue text-white rounded-full"
+                          src="/assets/our testimonial image1.png"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-[#ED5251] font-sans text-[14px] font-semibold">
+                          Riddhi Singh
+                        </p>
+                        <p className="text-[12px] pr-4 pb-6 font-sans text-[#342D6F]">
+                          Physics Teacher
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-[#342D6F] font-semibold text-[13px]">
+                        “There are alot of models to explore which helps in
+                        understanding concept”
+                      </p>
+                      <p className="text-[13px] pb-6 md:pb-14 font-sans text-[#342D6F]">
+                        Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                        cursus egestas at ut elit. Id nec metus pharetra sit at
+                        nam.Lorem ipsum dolor sit amet consectetur. Netus amet
+                        morbi cursus egestas at ut elit. Id nec metus pharetra
+                        sit at nam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="container mx-auto">
+                  {/* TEST _ 2 */}
+                  <div className="flex flex-col">
+                    <div className="flex flex-row">
+                      <div className=" px-2 md:px-3 pt-1">
+                        <img
+                          className="h-8 w-8 bg-blue text-white rounded-full"
+                          src="/assets/our testimonial image2.png"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-[#ED5251] font-sans text-[14px]">
+                          Riddhi Singh
+                        </p>
+                        <p className="text-[12px] pb-6 font-sans text-[#342D6F]">
+                          Physics Teacher
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-[#342D6F] text-[13px] font-semibold">
+                        “There are alot of models to explore which helps in
+                        understanding concept”
+                      </p>
+                      <p className="text-[13px] pb-6 md:pb-14 font-sans text-[#342D6F]">
+                        Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                        cursus egestas at ut elit. Id nec metus pharetra sit at
+                        nam. Lorem ipsum dolor sit amet consectetur. Netus amet
+                        morbi cursus egestas at ut elit. Id nec metus pharetra
+                        sit at nam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="container mx-auto">
+                  {/* TEST _ 3 */}
+                  <div className="flex flex-col">
+                    <div className="flex flex-row">
+                      <div className="px-2 md:px-3 pt-1">
+                        <img
+                          className="h-8 w-8 bg-blue text-white rounded-full"
+                          src="/assets/our testimonial image3.png"
+                        />
+                      </div>
+                      <div>
+                        <p className="text-[#ED5251] font-sans text-[14px]">
+                          Riddhi Singh
+                        </p>
+                        <p className="text-[12px] pb-6 md:pb-6 font-sans text-[#342D6F]">
+                          Physics Teacher
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-[#342D6F] text-[13px] font-semibold font-sans">
+                        “There are alot of models to explore which helps in
+                        understanding concept”
+                      </p>
+                      <p className="text-[13px] pb-6 md:pb-14 font-sans text-[#342D6F]">
+                        Lorem ipsum dolor sit amet consectetur. Netus amet morbi
+                        cursus egestas at ut elit. Id nec metus pharetra sit at
+                        nam. Lorem ipsum dolor sit amet consectetur. Netus amet
+                        morbi cursus egestas at ut elit. Id nec metus pharetra
+                        sit at nam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+              
+      </div>
 
       {/* ------------Price Plan------------------- */}
 
       <div className="bg-[#FFDE95] bg-opacity-15 py-5 flex flex-col items-center justify-center space-y-5">
         <div className="flex flex-col items-center justify-center space-y-1">
-          <h1 className="text-4xl text-border_color font-bold text-center">
-            Pick Your Perfect Plan
-          </h1>
-          <p className="text-carrotColor font-semibold text-xl">OUR PRICING</p>
-          <p className="text-border_color">
+          <p className="text-carrotColor font-semibold md:text-xl text-base">
+            OUR PRICING
+          </p>
+          <div className="flex items-center gap-1">
+            <h1 className="md:text-4xl text-[25px] text-border_color font-bold text-center">
+              Pick Your Perfect Plan
+            </h1>
+            <div className="md:hidden">
+              <Image
+                src="/assets/red_131.png"
+                alt="Red"
+                width={10}
+                height={10}
+                quality={95}
+              />
+            </div>
+          </div>
+          <p className="text-border_color px-5 md:text-base text-[14px] max-md:text-center">
             Explore our flexible subscription plans designed to fit your needs.
             Choose the perfect option and start enhancing the learning journey
             today.
           </p>
         </div>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* -------------------------------------------------1 */}
-          <div className="border border-border_color relative rounded-2xl bg-white">
+          {/* ------------------------STADARD-------------------------1 */}
+          <div className="border border-border_color relative rounded-2xl bg-white md:h-[70vh]">
             <span className="text-3xl font-semibold bg-carrotColor text-white absolute top-0 rounded-tl-2xl px-5 py-1 mb-5">
               Standard
             </span>
-            <div className="border-b border-border_color px-5 py-5">
+            <div className="md:border-b border-border_color px-5 py-5 text-[14px]">
               <h3 className="text-border_color mt-14 py-5">
                 Lorem ipsum dolor sit amet consectetur. Netus amet morbi cursus
                 egestas at ut elit. Id nec metus pharetra sit at nam.
@@ -1480,41 +1558,45 @@ export default function About() {
                 ₹1000<span className="text-border_color text-xs">/STUDENT</span>
               </h1>
             </div>
-            <div className="flex flex-col items-start justify-center gap-5 space-y-4 py-5">
+            <div className="flex flex-col items-start justify-center gap-5 space-y-4 py-5 text-border_color">
               <ul className="list-disc px-10 custom-marker">
-                <span className="flex items-center gap-2 font-semibold">
-                  <span className="text-slate-950 bg-slate-100 p-1 ">
+                <span className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
+                  <span className="text-slate-500 bg-slate-100 p-1 ">
                     <FaCheck />
                   </span>
                   Experiments with hands-on Learning Curriculum
                 </span>
-                <li>Experiments on Subscription</li>
-                <li>Hands-on learning curriculum</li>
-                <li>Repair and maintenance.</li>
+                <li className="text-[14px]">Experiments on Subscription</li>
+                <li className="text-[14px]">Hands-on learning curriculum</li>
+                <li className="text-[14px]">Repair and maintenance.</li>
               </ul>
-              <ul className="list-disc px-10 custom-marker">
-                <span className="flex items-center gap-2 font-semibold">
-                  <span className="text-slate-950 bg-slate-100 p-1 ">
+              <ul className="list-disc px-10 custom-marker text-border_color">
+                <span className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
+                  <span className="text-slate-500 bg-slate-100 p-1 ">
                     <FaCheck />
                   </span>
                   Jigyasu curriculam
                 </span>
-                <li>
+                <li className="text-[14px]">
                   A Trained Demonstrator/Science Communicator/Teacher to provide
                   visualisation of these concepts and smooth running of the
                   science studio
                 </li>
               </ul>
-              <ul className="list-disc px-10 custom-marker">
-                <span className="flex items-center gap-2 font-semibold">
-                  <span className="text-slate-950 bg-slate-100 p-1 ">
+              <ul className="list-disc px-10 custom-marker ">
+                <span className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
+                  <span className="text-slate-500 bg-slate-100 p-1 ">
                     <FaCheck />
                   </span>
                   Jigyasu Program Management
                 </span>
-                <li>Program monitoring and weekly status report.</li>
-                <li>Curriculum mapping and flexibility in lesson plan.</li>
-                <li>
+                <li className="text-[14px]">
+                  Program monitoring and weekly status report.
+                </li>
+                <li className="text-[14px]">
+                  Curriculum mapping and flexibility in lesson plan.
+                </li>
+                <li className="text-[14px]">
                   Online LMS Activity sheets, Quiz, Performance assessment
                   report, Gap analysis.
                 </li>
@@ -1524,74 +1606,78 @@ export default function About() {
               Contact us
             </button>
           </div>
-          {/* --------------------------------- 2*/}
-          <div className="border border-border_color relative rounded-2xl bg-white">
+          {/* -----------------CUSTOM---------------- 2*/}
+          <div className="border md:border-border_color border-carrotColor relative rounded-2xl bg-white md:h-[70vh]">
             <span className="text-3xl font-semibold bg-carrotColor text-white absolute top-0 rounded-tl-2xl mb-5 px-5 py-1">
               Custom
             </span>
-            <div className="border-b border-border_color px-5 py-5">
+            <div className="md:border-b border-border_color px-5 py-5 text-[14px]">
               <h3 className="text-border_color mt-14 py-3">
                 Lorem ipsum dolor sit amet consectetur. Netus amet morbi cursus
                 egestas at ut elit. Id nec metus pharetra sit at nam.
               </h3>
             </div>
-            <div className="flex flex-col items-start justify-center gap-5 space-y-2 py-2">
+            <div className="flex flex-col items-start justify-center gap-5 space-y-2 py-2 text-border_color">
               <ul className="list-disc px-10 custom-marker">
-                <span className="flex items-center gap-2 font-semibold">
-                  <span className="text-slate-950 bg-slate-100 p-1 ">
+                <span className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
+                  <span className="text-slate-500 bg-slate-100 p-1 ">
                     <FaCheck />
                   </span>
                   Experiments with hands-on Learning Curriculum
                 </span>
-                <li>Experiments on Subscription</li>
-                <li>Hands-on learning curriculum</li>
-                <li>Repair and maintenance.</li>
+                <li className="text-[14px]">Experiments on Subscription</li>
+                <li className="text-[14px]">Hands-on learning curriculum</li>
+                <li className="text-[14px]">Repair and maintenance.</li>
               </ul>
               <ul className="list-disc px-10 custom-marker">
-                <span className="flex items-center gap-2 font-semibold">
-                  <span className="text-slate-950 bg-slate-100 p-1 ">
+                <span className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
+                  <span className="text-slate-500 bg-slate-100 p-1 ">
                     <FaCheck />
                   </span>
                   Jigyasu curriculam
                 </span>
-                <li>
+                <li className="text-[14px]">
                   A Trained Demonstrator/Science Communicator/Teacher to provide
                   visualisation of these concepts and smooth running of the
                   science studio
                 </li>
               </ul>
               <ul className="list-disc px-10 custom-marker">
-                <span className="flex items-center gap-2 font-semibold">
-                  <span className="text-slate-950 bg-slate-100 p-1 ">
+                <span className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
+                  <span className="text-slate-500 bg-slate-100 p-1 ">
                     <FaCheck />
                   </span>
                   Jigyasu Program Management
                 </span>
-                <li>Program monitoring and weekly status report.</li>
-                <li>Curriculum mapping and flexibility in lesson plan.</li>
-                <li>
+                <li className="text-[14px]">
+                  Program monitoring and weekly status report.
+                </li>
+                <li className="text-[14px]">
+                  Curriculum mapping and flexibility in lesson plan.
+                </li>
+                <li className="text-[14px]">
                   Online LMS Activity sheets, Quiz, Performance assessment
                   report, Gap analysis.
                 </li>
               </ul>
               <ul className="list-disc px-10 custom-marker">
-                <span className="flex items-center gap-2 font-semibold">
+                <span className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
                   <span className="text-slate-950 bg-slate-100 p-1 ">
                     <FaCheck />
                   </span>
                   Maintenance & Support
                 </span>
-                <li>
+                <li className="text-[14px]">
                   Jigyasu will provide repair & Maintenance for the equipment
                   provided in the Science Studio
                 </li>
               </ul>
             </div>
-            <div className="my-5 mx-10 flex flex-col md:flex-row  items-center gap-5">
-              <button className="bg-[#342d6f9f] px-6 py-2 rounded-full text-white">
+            <div className="my-5 mx-10 flex  items-center gap-5">
+              <button className="bg-[#EAE8FF] md:px-6 md:py-2 rounded-full text-[14px] md:text-base text-[#342D6F] font-semibold px-2 py-1">
                 Calculate Budget
               </button>
-              <button className="bg-border_color px-6 py-2 rounded-full text-white">
+              <button className="bg-border_color md:px-6 md:py-2 rounded-full text-white text-[14px] md:text-base px-3 py-1">
                 Contact us
               </button>
             </div>
