@@ -256,8 +256,7 @@ export default function About() {
       </div>
 
       {/* -------------------OUR PHILOSOPHY---------------------- */}
-
-      <div className="container mx-auto md:px-28 mb-8 my-2 bg-cover bg-cream bg-center bg-no-repeat">
+      <div className="container mx-auto md:px-24 mb-8 my-2 bg-cover bg-cream bg-center bg-no-repeat">
         <div className="flex flex-col items-center md:flex-row justify-between py-8 md:px-4 md:py-20">
           <div className="flex flex-col gap-1 text-center md:text-left">
             <p className="text-[#ED5251] font-semibold text-base md:text-xl">
@@ -301,7 +300,7 @@ export default function About() {
             />
             <div className="flex flex-col md:mx-14 py-1 gap-1 text-center">
               <p className="text-[#ED5251] font-bold text-[28px]">Engage</p>
-              <p className="text-[#342D6F] text-[16px]">
+              <p className="text-[#342D6F] text-sm">
                 Students are engaged in hands-on science activities that spark
                 their curiosity and interest.
               </p>
@@ -345,7 +344,6 @@ export default function About() {
       </div>
 
       {/* RECOGNIZED BY */}
-
       <div className="bg-[#FFE8E8] flex flex-col gap-5 justify-center md:flex-row items-center md:p-10 p-5 ">
         <div className="md:w-1/2 w-2/3 text-center">
           <p className="text-xl md:text-3xl uppercase text-border_color font-bold md:font-semibold max-md:hidden">
@@ -389,7 +387,6 @@ export default function About() {
       </div>
 
       {/* Challenges We Address */}
-
       <div className="md:py-20 mt-10 relative bg-[#F5F5F5] overflow-hidden">
         <div className="container mx-auto flex flex-col space-y-1 max-md:flex-wrap">
           <div className="">
@@ -430,8 +427,7 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="">
-            {/* flex flex-col md:flex-row items-start justify-start */}
+          <div className="max-md:flex max-md:flex-col max-md:items-center max-md:justify-center max-md:container max-md:mx-auto">
             {/* One */}
             <div className="grid grid-cols-1 md:grid-cols-3 items-center">
               <div>
@@ -514,10 +510,9 @@ export default function About() {
       </div>
 
       {/* Need of the hour */}
-
       <div className="py-10 max-md:text-center md:my-10">
         <div className="container mx-auto space-y-3">
-          <div className="flex items-center  gap-2">
+          <div className="flex items-center max-md:container max-md:mx-auto gap-2">
             <p className="text-carrotColor text-4xl capitalize font-bold ">
               Need of the hour
             </p>
@@ -531,7 +526,7 @@ export default function About() {
             />
           </div>
           <div className="lg:flex items-center justify-between flex-col  md:flex-row gap-3">
-            <div className="space-y-3 md:space-y-6 text-left lg:w-1/3 max-md:pb-5">
+            <div className="space-y-3 md:space-y-6  lg:w-1/3 max-md:pb-5 max-md:flex max-md:flex-col max-md:justify-end text-left max-md:container max-md:mx-auto">
               <div>
                 <h3 className="text-border_color font-bold text-base">
                   Joyful & Stress-Free Learning
@@ -591,7 +586,6 @@ export default function About() {
       </div>
 
       {/* STATISTICS */}
-
       <div className="bg-carrotColor py-2 md:py-10">
         <div className="container mx-auto text-white grid grid-cols-2 md:grid-cols-4 gap-2">
           <div className="flex items-center flex-col">
@@ -618,7 +612,6 @@ export default function About() {
       </div>
 
       {/* Why Choose Us */}
-
       <div className="md:my-0 my-10 bg-cover bg-cream  py-5  md:py-24 bg-center bg-no-repeat w-full">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:pl-32 md:text-left container mx-auto ">
           <div className="w-full">
@@ -733,14 +726,16 @@ export default function About() {
                 </div>
               </div>
               <div className="md:w-full  md:mt-0  md:pt-0 image-container  container mx-auto relative md:order-2">
-                <Image
-                  className="relative z-50 md:-mt-28"
-                  src="/assets/why choose us image.png"
-                  alt="Image 2"
-                  width={400}
-                  height={400}
-                  quality={95}
-                />
+                <div>
+                  <Image
+                    className="relative z-50 md:-mt-28"
+                    src="/assets/why choose us image.png"
+                    alt="Image 2"
+                    width={400}
+                    height={400}
+                    quality={95}
+                  />
+                </div>
                 <Image
                   className="absolute left-[48%] bottom-14 "
                   src={"/assets/Rectangle91.png"}
@@ -772,7 +767,6 @@ export default function About() {
       </div>
 
       {/* Explorer OUR MODEL */}
-
       <div className="flex flex-col items-center md:flex-row justify-between py-5 max-md:-mt-10">
         <div className="flex flex-col gap-4 text-center md:text-left md:px-24 container mx-auto pr-4 pl-4">
           <p className="text-[16px] md:text-[20px] font-semibold text-carrotColor">
@@ -799,7 +793,6 @@ export default function About() {
           </p>
         </div>
       </div>
-
       <Marquee speed={120} loop={0} pauseOnHover className="container mx-auto">
         <div className="flex items-center mx-6 flex-row gap-10">
           <div className="max-md:w-40">
@@ -856,10 +849,14 @@ export default function About() {
       </Marquee>
 
       {/* hands-on science */}
-
       <div className="grid grid-cols-1 md:grid-cols-2 bg-[#342D6F] px-6 md:px-36 py-0 pb-10 mt-10 md:py-28 relative max-md:pr-4 max-md:pl-4">
         <div className="flex flex-col-reverse container mx-auto ">
-          <div className="flex items-center pt-4 md:pt-0 space-y-5">
+          <div className="flex max-md:flex-col items-center pt-4 md:pt-0 space-y-5">
+            <div>
+              <p className="text-[#FFFFFF] font-bold text-[25px] md:hidden z-50 text-center">
+                Ready to engage your students in hands-on science learning?
+              </p>
+            </div>
             <Image
               className="w-full object-cover "
               src="/assets/Rectangle 65.png"
@@ -908,7 +905,7 @@ export default function About() {
         </div>
         <div className="flex flex-col justify-center gap-4 text-center md:text-left md:pl-20 space-y-5">
           <div className="relative pt-2 ">
-            <p className="text-[#FFFFFF] font-bold md:text-4xl text-[25px]">
+            <p className="text-[#FFFFFF] font-bold md:text-4xl text-[25px] max-md:hidden">
               Ready to engage your students in hands-on science learning?
             </p>
             <div className="md:block hidden absolute right-[60%] bottom-2">
@@ -932,59 +929,59 @@ export default function About() {
             experiences of students, nurturing the next generation of
             &quot;Graham Bells.&quot;
           </p>
-          <button className="btn bg-[#ED5251] mx-16 md:mx-0 w-auto justify-center md:justify-normal md:w-40 h-10 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full ">
-            Book Demo
-          </button>
+          <div className="w-full">
+            <button className="btn bg-[#ED5251] px-5 py-2 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full ">
+              Book Demo
+            </button>
+          </div>
         </div>
       </div>
 
       {/* UNLOCK BENEFITS ---------------------------------*/}
-
-      <div className="bg-[#FFDE95] bg-opacity-15 py-10 unlock-benifits-section">
+      <div className="bg-[#FFDE95] bg-opacity-15 md:py-20  bg-student_desk bg-contain  bg-no-repeat md:bg-right max-md:bg-bottom max-md:object-right-top max-md:h-[60vh] max-md:w-[100vw]">
         <div className="container mx-auto">
           <div className="flex flex-col items-center md:flex-row justify-between md:pl-4  ">
             <div className="flex flex-col gap-4 md:pb-28 text-center pt-10 md:pt-20 md:text-left">
-              <p className="text-[#2C7698] font-bold text-lg">
+              <p className="text-[#2C7698] font-bold md:text-lg text-base">
                 UNLOCK BENEFITS
               </p>
-              <p className="text-[#ED5251] font-bold text-4xl flex flex-col">
-                Our Student's Journey{" "}
-                <span className="flex items-center gap-2">
-                  Over a Span of time
-                  <span className="hidden md:block">
-                    <Image
-                      src={"/assets/Ellipse22_1.png"}
-                      alt="Ellipse22_1"
-                      width={15}
-                      height={15}
-                      quality={95}
-                    />
-                  </span>
-                </span>
-              </p>
-              <div className="flex flex-col-reverse md:flex-row md:gap-20 text-left md:text-left pl-14">
-                <div className="flex flex-col md:flex-row">
-                  <ul className="list-disc marker:text-yellow-400 marker:text-3xl text-[#2C7698] lg:w-96">
-                    <li className="font-semibold text-base">
+              <div className="relative md:w-[20vw]">
+                <p className="text-[#ED5251] font-bold md:text-4xl text-[25px]">
+                  Our Student's Journey Over a Span of time
+                </p>
+                <div className="hidden md:block absolute bottom-2 left-[82%]">
+                  <Image
+                    src={"/assets/Ellipse22_1.png"}
+                    alt="Ellipse22_1"
+                    width={15}
+                    height={15}
+                    quality={95}
+                  />
+                </div>
+              </div>
+              <div className="flex max-md:flex-col items-start justify-start container mx-auto max-md:-mb-8">
+                <div className="">
+                  <ul className="list-disc marker:text-yellow-400 marker:text-xl text-[#2C7698] lg:w-96">
+                    <li className="font-semibold md:text-base text-[14px] w-full text-left">
                       Increase in visualization capacity
                     </li>
-                    <li className="font-semibold text-base">
+                    <li className="font-semibold md:text-base text-[14px] w-full text-left">
                       Students develop experimental skills
                     </li>
-                    <li className="font-semibold text-base">
+                    <li className="font-semibold md:text-base text-[14px] w-full text-left">
                       Deeper understanding, longer retention
                     </li>
                   </ul>
                 </div>
                 <div className=" md:pl flex flex-col md:flex-row">
-                  <ul className="list-disc marker:text-yellow-400 marker:text-3xl text-[#2C7698] lg:w-96">
-                    <li className="font-semibold text-base">
+                  <ul className="list-disc marker:text-yellow-400 marker:text-xl text-[#2C7698] lg:w-96">
+                    <li className="font-semibold md:text-base text-[14px] w-full text-left">
                       Application of science concepts to real world scenarios
                     </li>
-                    <li className="font-semibold text-base">
+                    <li className="font-semibold md:text-base text-[14px] w-full text-left">
                       Skill addition relevant to industry
                     </li>
-                    <li className="font-semibold text-base">
+                    <li className="font-semibold md:text-base text-[14px] w-full text-left">
                       Product development experience
                     </li>
                   </ul>
@@ -1008,29 +1005,26 @@ export default function About() {
               
       </div>
 
-      {/* ------------------ ----------------*/}
       {/* ------------------Student Gallery ----------------*/}
-
       <div className="flex flex-col items-center md:flex-row justify-between md:pt-20 py-10 pt-5 md:py-10 md:pl-16">
         <div className="flex flex-col gap-4 text-center md:text-left px-6 md:px-24">
           <p className="text-[#ED5251] md:text-xl text-base font-semibold">
             OUR GALLERY
           </p>
-          <p className="text-[#342D6F] font-bold md:text-4xl text-[25px] max-md:text-center">
-            Students Discovering
-            <span className="flex items-center gap-1 max-md:pl-14">
-              Science Firsthand
-              <span className="hidden md:block">
-                <Image
-                  src={"/assets/Ellipse38_1.png"}
-                  alt="Ellipse22_1"
-                  width={15}
-                  height={15}
-                  quality={95}
-                />
-              </span>
-            </span>
-          </p>
+          <div className="md:w-1/3 relative">
+            <p className="text-[#342D6F] font-bold md:text-4xl text-[25px] max-md:text-center">
+              Students Discovering Science Firsthand
+            </p>
+            <div className="hidden md:block absolute bottom-2 left-[62%]">
+              <Image
+                src={"/assets/Ellipse38_1.png"}
+                alt="Ellipse22_1"
+                width={15}
+                height={15}
+                quality={95}
+              />
+            </div>
+          </div>
           <p className="text-[#342D6F] text-[11px] md:text-[16px] max-md:text-pretty md:w-2/3">
             Our science models are a great way to engage students in hands-on
             learning. Each model comes with a detailed teacher guide and student
@@ -1044,22 +1038,23 @@ export default function About() {
       <div className="container mx-auto md:hidden">
         <Swiper
           slidesPerView={1}
-          spaceBetween={3}
-          freeMode={true}
+          spaceBetween={0}
           pagination={{
             clickable: true,
           }}
-          modules={[FreeMode, Pagination]}
+          modules={[Pagination]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <Image
-              src="/assets/our gallery image1.png"
-              alt="image"
-              width={300}
-              height={300}
-              quality={95}
-            />
+            <div className="flex items-center justify-center">
+              <Image
+                src="/assets/our gallery image1.png"
+                alt="image"
+                width={300}
+                height={300}
+                quality={95}
+              />
+            </div>
           </SwiperSlide>
 
           <SwiperSlide>
@@ -1082,13 +1077,15 @@ export default function About() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <Image
-              src="/assets/our gallery image4.png"
-              alt="image"
-              width={300}
-              height={300}
-              quality={95}
-            />
+            <div className="flex items-center justify-center">
+              <Image
+                src="/assets/our gallery image4.png"
+                alt="image"
+                width={300}
+                height={300}
+                quality={95}
+              />
+            </div>
           </SwiperSlide>
 
           <SwiperSlide>
@@ -1111,13 +1108,15 @@ export default function About() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <Image
-              src="/assets/our gallery image4.png"
-              alt="image"
-              width={300}
-              height={300}
-              quality={95}
-            />
+            <div className="flex items-center justify-center">
+              <Image
+                src="/assets/our gallery image4.png"
+                alt="image"
+                width={300}
+                height={300}
+                quality={95}
+              />
+            </div>
           </SwiperSlide>
 
           <SwiperSlide>
@@ -1140,13 +1139,15 @@ export default function About() {
           </SwiperSlide>
 
           <SwiperSlide>
-            <Image
-              src="/assets/our gallery image1.png"
-              alt="image"
-              width={300}
-              height={300}
-              quality={95}
-            />
+            <div className="flex items-center justify-center">
+              <Image
+                src="/assets/our gallery image1.png"
+                alt="image"
+                width={300}
+                height={300}
+                quality={95}
+              />
+            </div>
           </SwiperSlide>
 
           <SwiperSlide>
@@ -1631,7 +1632,6 @@ export default function About() {
       </div>
 
       {/* ------------Price Plan------------------- */}
-
       <section
         id="pricing"
         className="bg-[#FFDE95] bg-opacity-15 pb-10 md:pb-20 flex flex-col items-center justify-center space-y-5 pt-10 w-auto h-auto"
@@ -1720,7 +1720,7 @@ export default function About() {
               </ul>
             </div>
             <div className="flex items-center justify-center py-5 my-4">
-              <button className="bg-border_color max-md:px-3 px-2 py-1 rounded-full text-white text-[14px] md:text-[16px]">
+              <button className="bg-border_color px-3 py-2 rounded-full text-white text-[14px] md:text-[16px]">
                 Contact us
               </button>
             </div>
@@ -1793,10 +1793,10 @@ export default function About() {
               </ul>
             </div>
             <div className="flex items-center justify-center gap-4 py-5">
-              <button className="bg-[#EAE8FF] max-md:px-3 px-2 py-1 rounded-full text-[#342D6F] text-[14px] md:text-[16px]">
+              <button className="bg-[#EAE8FF]  px-3 py-2 rounded-full text-[#342D6F] text-[14px] md:text-[16px]">
                 Calculate Budget
               </button>
-              <button className="bg-border_color max-md:px-3 px-2 py-1 rounded-full text-white text-[14px] md:text-[16px]">
+              <button className="bg-border_color  px-3 py-2 rounded-full text-white text-[14px] md:text-[16px]">
                 Contact us
               </button>
             </div>

@@ -14,6 +14,9 @@ module.exports = {
       padding: "1rem",
     },
     extend: {
+      backgroundImage: {
+        student_desk: "url('/assets/image_be_10.png')",
+      },
       colors: {
         carrotColor: "#ED5251",
         carrotColor_hover: "#ed5151c9",

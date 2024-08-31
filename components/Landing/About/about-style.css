@@ -3,10 +3,3 @@
 .grid-item {
   position: relative;
 }
-
-.unlock-benifits-section {
-  background-image: url("../About/image_be_10.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-}
