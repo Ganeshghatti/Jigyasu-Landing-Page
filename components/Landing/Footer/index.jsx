@@ -15,8 +15,8 @@ function classNames(...classes) {
 export default function Footer() {
   return (
     <section className="bg-[#342D6F] py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 items-center">
-        <div className="space-y-7">
+      <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 items-center">
+        <div className="space-y-7 max-md:col-span-2 max-md:mb-5">
           <div>
             <Image
               src="/assets/j_Logo.png"
@@ -26,7 +26,7 @@ export default function Footer() {
               quality={95}
             />
           </div>
-          <div className="text-white md:text-base text-[12px]  space-y-7">
+          <div className="text-white md:text-base text-[12px] ">
             <p>
               Jigyasu is an educational startup with "Learning By Doing" as its
               guiding principle. Founded by Mr. Satwik Das, an IIT Kharagpur
@@ -38,32 +38,34 @@ export default function Footer() {
 
         {/* LINKS */}
 
-        <div className="text-white flex items-start md:items-center flex-col">
-          <ul>
-            <span className="text-amber-500 text-base  font-semibold">
-              Link
-            </span>
-            {navigation?.map((each, index) => (
-              <li key={index}>
-                <Link href={each?.href} className="md:text-base text-[12px] ">
-                  {each?.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <div className="md:flex md:items-start md:justify-around md:col-span-2">
+          <div className="text-white flex items-start md:items-center flex-col">
+            <ul className="">
+              <span className="text-amber-500 text-base  font-semibold">
+                Link
+              </span>
+              {navigation?.map((each, index) => (
+                <li key={index} className="max-md:-mt-1">
+                  <Link href={each?.href} className="md:text-base text-[12px]">
+                    {each?.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/*DISCLAImER  */}
+          {/*DISCLAImER  */}
 
-        <div className="flex flex-col text-white items-start md:text-base text-[12px]">
-          <span>Disclaimer</span>
-          <span>Privacy Policy</span>
-          <span>Terms & Conditions</span>
+          <div className="flex flex-col text-white items-start md:text-base text-[12px]">
+            <span>Disclaimer</span>
+            <span>Privacy Policy</span>
+            <span>Terms & Conditions</span>
+          </div>
         </div>
 
         {/* ADDRESS */}
 
-        <div className="text-white space-y-5">
+        <div className="text-white space-y-5 ">
           <span className="text-amber-500 text-base font-semibold">
             Contact Details
           </span>
@@ -78,11 +80,10 @@ export default function Footer() {
             </span>
           </span>
         </div>
+        <p className="text-slate-500 md:text-base text-[12px] mt-8 ">
+          Copyright 2024@ Jigyasu Education
+        </p>
       </div>
     </section>
   );
-}
-
-{
-  /* <p className="text-slate-500">Copyright 2024@ Jigyasu Education</p> */
 }
