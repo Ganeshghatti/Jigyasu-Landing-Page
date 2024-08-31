@@ -198,7 +198,7 @@ export default function About() {
       {/* WHO ARE WE ?  */}
       <div className="flex flex-col-reverse md:px-10 md:flex-row justify-between items-center">
         <div className="container mx-auto flex items-center flex-col md:flex-row gap-8">
-          <div className="md:w-1/2 md:px-24">
+          <div className="md:w-1/2 md:px-24 order-2 md:order-1">
             <Image
               className="w-full h-full object-cover"
               src="/assets/about page image2.png"
@@ -209,15 +209,15 @@ export default function About() {
             />
           </div>
 
-          <div className="md:w-1/2 flex flex-col pb-8 md:pb-0 md:px-10 gap-4 justify-center md:justify-normal text-center md:text-left">
-            <p className="text-carrotColor text-base font-semibold">
+          <div className="md:w-1/2 flex flex-col pb-8 md:pb-0 md:px-10 gap-4 justify-center md:justify-normal text-center md:text-left order-1 md:order-2">
+            <p className="text-carrotColor text-base md:text-xl  font-semibold">
               WHO ARE WE?
             </p>
-            <p className="text-4xl font-bold text-border_color flex flex-col max-md:items-center">
+            <p className="text-[30px] md:text-4xl font-bold text-border_color flex flex-col max-md:items-center">
               About our{" "}
               <span className="flex items-center gap-1">
                 Science Studio
-                <span>
+                <span className="hidden md:block">
                   <Image
                     src={"/assets/Ellipse22_1.png"}
                     alt="Ellipse22_1"
@@ -239,7 +239,7 @@ export default function About() {
               experiences of students, nurturing the next generation of
               &quot;Graham Bells.&quot;
             </p>
-            <button className="btn justify-center mx-24 md:mx-0 md:justify-normal bg-carrotColor hover:bg-carrotColor_hover w-auto md:w-40 h-10 text-white border-none capitalize rounded-full">
+            <button className="btn justify-center mx-24 md:mx-0 md:justify-normal bg-carrotColor hover:bg-carrotColor_hover w-auto md:w-40 h-10 text-white border-none capitalize rounded-full md:text-base text-[14px]">
               Know More
             </button>
           </div>
@@ -251,14 +251,14 @@ export default function About() {
       <div className="container mx-auto md:px-28 mb-8 my-2 bg-cover bg-cream bg-center bg-no-repeat">
         <div className="flex flex-col items-center md:flex-row justify-between py-8 md:px-4 md:py-20">
           <div className="flex flex-col gap-4 text-center md:text-left">
-            <p className="text-[#ED5251] font-semibold text-base">
+            <p className="text-[#ED5251] font-semibold text-base md:text-xl">
               OUR PHILOSOPHY
             </p>
-            <p className="text-border_color text-4xl font-bold flex flex-col max-md:items-center">
+            <p className="text-border_color text-[25px]  md:text-4xl font-bold flex flex-col max-md:items-center">
               We Believe in Making Science
               <span className="flex items-end gap-2">
                 Fun and Engaging
-                <span>
+                <span className="hidden md:block">
                   <Image
                     src={"/assets/Ellipse22_1.png"}
                     alt="Ellipse22_1"
@@ -291,7 +291,7 @@ export default function About() {
               quality={95}
             />
             <div className="flex flex-col md:mx-14 py-2 gap-1 text-center">
-              <p className="text-[#ED5251] font-bold text-3xl">Engage</p>
+              <p className="text-[#ED5251] font-bold text-[28px]">Engage</p>
               <p className="text-[#342D6F] text-[16px]">
                 Students are engaged in hands-on science activities that spark
                 their curiosity and interest.
@@ -384,13 +384,13 @@ export default function About() {
       <div className="py-20 relative bg-[#F5F5F5] overflow-hidden">
         <div className="container mx-auto flex flex-col space-y-1">
           <div className="">
-            <div className="space-y-3">
-              <h4 className="text-carrotColor font-semibold text-base">
+            <div className="space-y-3 max-md:text-center">
+              <h4 className="text-carrotColor font-semibold text-xl max-md:text-center">
                 Challenges We Address
               </h4>
-              <p className="text-border_color  text-4xl font-bold flex flex-col">
+              <p className="text-border_color  md:text-4xl text-[25px] font-bold flex flex-col max-md:text-center">
                 Why Traditional{" "}
-                <span className="flex items-center gap-2">
+                <span className="flex items-center gap-2 max-md:pl-8">
                   Learning Isn't Enough
                   <span className="hidden md:block">
                     <Image
@@ -578,20 +578,24 @@ export default function About() {
       <div className="bg-carrotColor py-10">
         <div className="container mx-auto text-white grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex items-center flex-col">
-            <h1 className="text-7xl font-extrabold">20K+</h1>
-            <p className="font-semibold text-xl">STUDENTS</p>
+            <h1 className="md:text-[64px] text-[44px] font-extrabold">20K+</h1>
+            <p className="font-semibold text-base md:text-[26px]">STUDENTS</p>
           </div>
-          <div className="flex items-center flex-col">
-            <h1 className="text-7xl font-extrabold">600+</h1>
-            <p className="font-semibold text-xl">EXPERIMENT KITS</p>
+          <div className="flex items-center flex-col text-center">
+            <h1 className="md:text-[64px] text-[44px] font-extrabold">600+</h1>
+            <p className="font-semibold text-base md:text-[26px]">
+              EXPERIMENT KITS
+            </p>
           </div>
-          <div className="flex items-center flex-col">
-            <h1 className="text-7xl font-extrabold">20+</h1>
-            <p className="font-semibold text-xl">SCHOOLS</p>
+          <div className="flex items-center flex-col text-center">
+            <h1 className="md:text-[64px] text-[44px] font-extrabold">20+</h1>
+            <p className="font-semibold text-base md:text-[26px]">SCHOOLS</p>
           </div>
-          <div className="flex items-center flex-col">
-            <h1 className="text-7xl font-extrabold">16+</h1>
-            <p className="font-semibold text-xl">YR EXPERIENCE</p>
+          <div className="flex items-center flex-col text-center">
+            <h1 className="md:text-[64px] text-[44px] font-extrabold">16+</h1>
+            <p className="font-semibold text-base md:text-[26px]">
+              YR EXPERIENCE
+            </p>
           </div>
         </div>
       </div>
@@ -601,12 +605,12 @@ export default function About() {
       <div className="md:my-0 my-10 bg-cover bg-cream  py-10  md:py-24 bg-center bg-no-repeat w-full">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:pl-32 md:text-left container mx-auto ">
           <div className="w-full">
-            <p className="text-carrotColor text-lg font-semibold">
+            <p className="text-carrotColor md:text-[20px] font-semibold">
               <b>WHY CHOOSE US</b>
             </p>
-            <p className="md:text-4xl text-3xl py-5 text-[#342D6F] flex flex-col font-bold">
-              Unlock the Wonders of Science with{" "}
-              <span className="flex items-center gap-1">
+            <p className="md:text-4xl text-[25] py-5 text-[#342D6F] flex flex-col font-bold max-md:text-center uppercase">
+              Unlock the Wonders of Science with
+              <span className="flex items-center gap-1 max-md:text-center pl-12">
                 Engaging Hands-On Learning
                 <span className="hidden md:block">
                   <Image

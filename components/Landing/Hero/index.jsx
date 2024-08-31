@@ -68,8 +68,15 @@ export default function Hero() {
 
             {/* Hero Image */}
             <Image
-              className="relative z-50 w-full h-full"
+              className="relative z-50 w-full h-full hidden lg:block"
               src="/assets/images/Intro-Label-1.png"
+              alt="Hero Image"
+              width={500} // specify the width
+              height={500} // specify the height
+            />
+            <Image
+              className="relative z-50 w-full h-full lg:hidden "
+              src="/assets/images/stu.png"
               alt="Hero Image"
               width={500} // specify the width
               height={500} // specify the height

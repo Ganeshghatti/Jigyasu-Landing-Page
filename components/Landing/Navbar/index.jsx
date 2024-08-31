@@ -32,7 +32,7 @@ export default function Navbar() {
                     quality={95}
                   />
                 </div>
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden lg:flex items-center gap-8">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
@@ -49,7 +49,7 @@ export default function Navbar() {
                     </a>
                   ))}
                 </div>
-                <div className="gap-5 hidden md:flex items-center ">
+                <div className="gap-5 hidden lg:flex items-center ">
                   <button className="border border-border_color font-bold py-1 px-6 rounded-full text-md md:text-sm text-border_color">
                     Pricing
                   </button>
@@ -58,7 +58,7 @@ export default function Navbar() {
                   </button>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                 {/* Mobile menu button */}
                 <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -78,7 +78,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <DisclosurePanel className="md:hidden bg-white">
+          <DisclosurePanel className="lg:hidden bg-white">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <DisclosureButton
