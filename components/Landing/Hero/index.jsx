@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section className="">
       <Navbar />
-      <div className="hero-content overflow-hidden w-full mx-0 px-0  bg-cover bg-carrotColor  md:pt-16 pt-28 object-cover bg-no-repeat flex flex-col md:flex-row items-center py-10">
-        <div className="text-content md:pb-14 px-6 md:px-0 pb-10 flex flex-col items-center md:items-start md:w-1/2 text-center md:text-left md:pl-36">
+      <div className="hero-content overflow-hidden w-full mx-0 px-0  bg-cover bg-carrotColor  md:pt-16 pt-28 object-cover bg-no-repeat flex flex-col md:flex-row items-center py-5">
+        <div className="text-content md:pb-14 px-3 md:px-0 pb-10 flex flex-col items-center md:items-start md:w-1/2 text-center md:text-left md:pl-36">
           <button className="btn w-56 bg-[#FFDE95] bg-opacity-20 text-[#F8C24B] font-sans text-[18px] border-none hover:bg-stone-50 hover:text-black capitalize rounded-full h-10  md:mb-0">
             <b>LEARNING BY DOING</b>
           </button>
@@ -68,14 +68,14 @@ export default function Hero() {
 
             {/* Hero Image */}
             <Image
-              className="relative z-50 w-full h-full hidden lg:block"
+              className="relative z-50 w-full h-full hidden md:block"
               src="/assets/images/Intro-Label-1.png"
               alt="Hero Image"
               width={500} // specify the width
               height={500} // specify the height
             />
             <Image
-              className="relative z-50 w-full h-full lg:hidden "
+              className="relative z-50 w-full h-full md:hidden "
               src="/assets/images/stu.png"
               alt="Hero Image"
               width={500} // specify the width

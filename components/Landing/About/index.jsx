@@ -74,16 +74,17 @@ export default function About() {
 
   return (
     <div
-      className=" mx-0 mb-10 bg-cover bg-cream px-6 md:px-0  py-10 md:py-4 md:pb-16  bg-no-repeat bg-[#F5F5F5]"
+      className="bg-cover bg-cream px-0 bg-no-repeat bg-[#F5F5F5]"
       id="about"
     >
-      <div className="items-center text-center py-20 space-y-10">
-        <div className=" justify-center  text-[#342D6F] font-sans md:text-[20px] items-center text-center ">
+      {/* TRUSTED BY 20+ */}
+      <div className="items-center text-center py-5 md:py-10 md:space-y-5 space-y-3">
+        <div className=" justify-center  text-[#342D6F] font-sans md:text-[20px] items-center text-center md:mt-10 mt-5">
           <b>TRUSTED BY 20+ SCHOOLS</b>
         </div>
-        <div className="container mx-auto h-32">
+        <div className="container mx-auto md:h-32 h-24">
           <Marquee loop={0} pauseOnHover speed={100}>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo1.png"}
                 alt={"school Partners"}
@@ -92,7 +93,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo2.png"}
                 alt={"school Partners"}
@@ -101,7 +102,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo3.png"}
                 alt={"school Partners"}
@@ -110,7 +111,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo4.png"}
                 alt={"school Partners"}
@@ -119,7 +120,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo5.png"}
                 alt={"school Partners"}
@@ -128,7 +129,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo6.png"}
                 alt={"school Partners"}
@@ -137,7 +138,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo7.png"}
                 alt={"school Partners"}
@@ -146,7 +147,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo8.png"}
                 alt={"school Partners"}
@@ -155,7 +156,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo9.png"}
                 alt={"school Partners"}
@@ -164,7 +165,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo10.png"}
                 alt={"school Partners"}
@@ -173,7 +174,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo11.png"}
                 alt={"school Partners"}
@@ -182,7 +183,7 @@ export default function About() {
                 quality={95}
               />
             </div>
-            <div>
+            <div className="max-md:w-20">
               <Image
                 src={"/assets/images/logo12.png"}
                 alt={"school Partners"}
@@ -196,9 +197,9 @@ export default function About() {
       </div>
 
       {/* WHO ARE WE ?  */}
-      <div className="flex flex-col-reverse md:px-10 md:flex-row justify-between items-center">
-        <div className="container mx-auto flex items-center flex-col md:flex-row gap-8">
-          <div className="md:w-1/2 md:px-24 order-2 md:order-1">
+      <div className="flex flex-col-reverse md:px-5 md:flex-row justify-between items-center">
+        <div className="container mx-auto flex items-center flex-col md:flex-row gap-3">
+          <div className="md:w-1/2 md:px-24 order-2 md:order-1 relative">
             <Image
               className="w-full h-full object-cover"
               src="/assets/about page image2.png"
@@ -209,13 +210,13 @@ export default function About() {
             />
           </div>
 
-          <div className="md:w-1/2 flex flex-col pb-8 md:pb-0 md:px-10 gap-4 justify-center md:justify-normal text-center md:text-left order-1 md:order-2">
+          <div className="md:w-1/2 flex flex-col pb-1 md:pb-0 md:px-10 gap-1 justify-center md:justify-normal text-center md:text-left order-1 md:order-2">
             <p className="text-carrotColor text-base md:text-xl  font-semibold">
               WHO ARE WE?
             </p>
             <p className="text-[30px] md:text-4xl font-bold text-border_color flex flex-col max-md:items-center">
               About our{" "}
-              <span className="flex items-center gap-1">
+              <span className="flex items-center max-md:-mt-3">
                 Science Studio
                 <span className="hidden md:block">
                   <Image
@@ -239,24 +240,26 @@ export default function About() {
               experiences of students, nurturing the next generation of
               &quot;Graham Bells.&quot;
             </p>
-            <button className="btn justify-center mx-24 md:mx-0 md:justify-normal bg-carrotColor hover:bg-carrotColor_hover w-auto md:w-40 h-10 text-white border-none capitalize rounded-full md:text-base text-[14px]">
-              Know More
-            </button>
+            <div>
+              <button className="md:text-base sm:text-[14px] text-[12px] bg-carrotColor text-white px-4 py-2 rounded-full">
+                Know More
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* -------------------OUR PHILOSPHY---------------------- */}
+      {/* -------------------OUR PHILOSOPHY---------------------- */}
 
       <div className="container mx-auto md:px-28 mb-8 my-2 bg-cover bg-cream bg-center bg-no-repeat">
         <div className="flex flex-col items-center md:flex-row justify-between py-8 md:px-4 md:py-20">
-          <div className="flex flex-col gap-4 text-center md:text-left">
+          <div className="flex flex-col gap-1 text-center md:text-left">
             <p className="text-[#ED5251] font-semibold text-base md:text-xl">
               OUR PHILOSOPHY
             </p>
-            <p className="text-border_color text-[25px]  md:text-4xl font-bold flex flex-col max-md:items-center">
+            <p className="text-border_color text-[25px]  md:text-4xl font-bold flex flex-col max-md:items-center max-md:-mt-1">
               We Believe in Making Science
-              <span className="flex items-end gap-2">
+              <span className="flex items-end gap-2 max-md:-mt-2">
                 Fun and Engaging
                 <span className="hidden md:block">
                   <Image
@@ -280,7 +283,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-4 mt-4 md:mt-0">
+        <div className="flex flex-col md:flex-row gap-2 md:mt-0">
           <div className="flex flex-col items-center">
             <Image
               className="rounded-2xl"
@@ -290,7 +293,7 @@ export default function About() {
               height={350}
               quality={95}
             />
-            <div className="flex flex-col md:mx-14 py-2 gap-1 text-center">
+            <div className="flex flex-col md:mx-14 py-1 gap-1 text-center">
               <p className="text-[#ED5251] font-bold text-[28px]">Engage</p>
               <p className="text-[#342D6F] text-[16px]">
                 Students are engaged in hands-on science activities that spark
@@ -307,7 +310,7 @@ export default function About() {
               height={350}
               quality={95}
             />
-            <div className="flex flex-col md:mx-14 py-2 gap-1 text-center">
+            <div className="flex flex-col md:mx-14 py-1 gap-1 text-center">
               <p className="text-[#ED5251] font-bold text-3xl">Observe</p>
               <p className="text-[#342D6F] text-sm">
                 They observe the scientific principles in action and learn
@@ -324,7 +327,7 @@ export default function About() {
               height={350}
               quality={95}
             />
-            <div className="flex flex-col md:mx-14 py-2 gap-1 text-center">
+            <div className="flex flex-col md:mx-14 py- gap-1 text-center">
               <p className="text-[#ED5251] font-bold text-3xl">Explore</p>
               <p className="text-[#342D6F] text-sm">
                 Finally, they implement their knowledge by applying it to
@@ -337,8 +340,8 @@ export default function About() {
 
       {/* RECOGNIZED BY */}
 
-      <div className="bg-[#FFE8E8] flex flex-col gap-10 justify-center md:flex-row items-center p-10 max-md:rounded-3xl">
-        <div className="w-1/2 text-center">
+      <div className="bg-[#FFE8E8] flex flex-col gap-5 justify-center md:flex-row items-center md:p-10 p-5 max-md:rounded-3xl">
+        <div className="md:w-1/2 w-2/3 text-center">
           <p className="text-xl md:text-3xl uppercase text-border_color font-bold md:font-semibold">
             RECOGNIZED BY
           </p>
@@ -381,16 +384,16 @@ export default function About() {
 
       {/* Challenges We Address */}
 
-      <div className="md:py-20 py-8 relative bg-[#F5F5F5] overflow-hidden">
+      <div className="md:py-20 mt-10 relative bg-[#F5F5F5] overflow-hidden">
         <div className="container mx-auto flex flex-col space-y-1">
           <div className="">
             <div className="space-y-3 max-md:text-center">
-              <h4 className="text-carrotColor font-semibold text-xl max-md:text-center">
+              <h4 className="text-carrotColor font-semibold md:text-xl max-md:text-center">
                 Challenges We Address
               </h4>
               <p className="text-border_color  md:text-4xl text-[25px] font-bold flex flex-col max-md:text-center">
-                Why Traditional{" "}
-                <span className="flex items-center gap-2 max-md:pl-8">
+                Why Traditional
+                <span className="flex items-center max-md:justify-center gap-2 max-md:-mt-2">
                   Learning Isn't Enough
                   <span className="hidden md:block">
                     <Image
@@ -419,10 +422,10 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-5">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-1">
             {/* One */}
             <div>
-              <div className="py-5 pr-6">
+              <div className="py-3 pr-6">
                 <h3 className="font-bold text-border_color text-base">
                   Lack of collaborative
                 </h3>
@@ -446,7 +449,7 @@ export default function About() {
             </div>
             {/* TWO */}
             <div>
-              <div className="py-5 pr-6">
+              <div className="py-3 pr-6">
                 <h3 className="font-bold text-border_color text-base">
                   Absence of a physical learning
                 </h3>
@@ -470,7 +473,7 @@ export default function About() {
             </div>
             {/* THree */}
             <div>
-              <div className="py-5 pr-6">
+              <div className="py-3 pr-6">
                 <h3 className="font-bold text-border_color text-base">
                   Static learning
                 </h3>
@@ -498,8 +501,8 @@ export default function About() {
 
       {/* Need of the hour */}
 
-      <div className="pr-10 py-10 max-md:text-center md:my-10 my-0">
-        <div className="container mx-auto space-y-8">
+      <div className="py-10 max-md:text-center md:my-10">
+        <div className="container mx-auto space-y-3">
           <div className="flex items-center gap-2">
             <p className="text-carrotColor text-4xl capitalize font-bold ">
               Need of the hour
@@ -513,7 +516,7 @@ export default function About() {
               className="hidden md:block"
             />
           </div>
-          <div className="flex items-start justify-between flex-col md:flex-row gap-8">
+          <div className="flex items-start justify-between flex-col md:flex-row gap-3">
             <div className="space-y-3 md:space-y-6 text-left">
               <div>
                 <h3 className="text-border_color font-bold text-base">
@@ -540,13 +543,13 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-5">
+            <div className="flex flex-col md:flex-row gap-3">
               <div>
                 <Image
                   src="/assets/need_1.png"
                   alt="Need of the hour"
-                  width={350}
-                  height={350}
+                  width={360}
+                  height={360}
                   quality={95}
                 />
               </div>
@@ -576,7 +579,7 @@ export default function About() {
       {/* STATISTICS */}
 
       <div className="bg-carrotColor py-2 md:py-10">
-        <div className="container mx-auto text-white grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="container mx-auto text-white grid grid-cols-2 md:grid-cols-4 gap-2">
           <div className="flex items-center flex-col">
             <h1 className="md:text-[64px] text-[44px] font-extrabold">20K+</h1>
             <p className="font-semibold text-base md:text-[26px]">STUDENTS</p>
@@ -605,27 +608,26 @@ export default function About() {
       <div className="md:my-0 my-10 bg-cover bg-cream  py-5  md:py-24 bg-center bg-no-repeat w-full">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:pl-32 md:text-left container mx-auto ">
           <div className="w-full">
-            <p className="text-carrotColor md:text-[20px] font-semibold">
-              <b>WHY CHOOSE US</b>
+            <p className="text-carrotColor md:text-[20px] text-base font-semibold">
+              WHY CHOOSE US
             </p>
-            <p className="md:text-4xl text-[25] py-2 text-[#342D6F] flex flex-col font-bold max-md:text-center uppercase">
-              Unlock the Wonders of Science with
-              <span className="flex items-center gap-1 max-md:text-center pl-12">
-                Engaging Hands-On Learning
-                <span className="hidden md:block">
-                  <Image
-                    src={"/assets/Ellipse22_1.png"}
-                    alt="Ellipse22_1"
-                    width={15}
-                    height={15}
-                    quality={95}
-                  />
-                </span>
-              </span>
-            </p>
-            <div className="flex flex-col-reverse md:flex-row gap-6 text-left md:text-left py-5">
+            <div className="md:text-4xl text-[25] py-2 text-[#342D6F] flex flex-col font-bold max-md:text-center capitalize relative max-md:-mb-5">
+              <p className="md:w-1/2">
+                Unlock the Wonders of Science with Engaging Hands-On Learning
+              </p>
+              <div className="hidden md:block absolute right-40 bottom-4 w-1/2">
+                <Image
+                  src={"/assets/Ellipse22_1.png"}
+                  alt="Ellipse22_1"
+                  width={15}
+                  height={15}
+                  quality={95}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col-reverse md:flex-row gap-2 text-left md:text-left md:mt-10 space-y-10">
               <div className=" flex flex-col lg:flex-row md:order-1">
-                <div className="flex flex-col">
+                <div className="flex flex-col max-md:py-3">
                   <div className="flex flex-row">
                     <div className=" px-2 md:px-3 pt-1">
                       <FaCheck
@@ -637,7 +639,7 @@ export default function About() {
                       <p className="text-[#ED5251] font-sans">
                         <b>Active Visualization & Tinkering</b>
                       </p>
-                      <p className="md:text-[16px] text-[11px] pr-4 md:pr-8 pb-6 md:pb-14 font-sans text-[#342D6F]">
+                      <p className="md:text-[16px] text-[11px]  pb-6 md:pb-14 font-sans text-[#342D6F] w-full">
                         Physical learning platform to explore science with
                         active visualization and tinkering to solve real-world
                         problems.
@@ -655,7 +657,7 @@ export default function About() {
                       <p className="text-[#ED5251] font-sans">
                         <b>Curriculum Synced Experiment</b>
                       </p>
-                      <p className="md:text-[16px] text-[12px] pr-4 md:pr-12 pb-6 md:pb-14  font-sans text-[#342D6F]">
+                      <p className="md:text-[16px] text-[12px] pb-6 md:pb-14  font-sans text-[#342D6F]">
                         Approx. 600 physical experiments synced with the
                         curriculum for Grades 6-12.
                       </p>
@@ -672,7 +674,7 @@ export default function About() {
                       <p className="text-[#ED5251] font-sans">
                         <b>Teacher/Demonstrator Support</b>
                       </p>
-                      <p className="md:text-[16px] text-[12px] pr-4 md:pr-8 pb-6 md:pb-14 font-sans text-[#342D6F]">
+                      <p className="md:text-[16px] text-[12px]  pb-6 md:pb-14 font-sans text-[#342D6F]">
                         Teacher and Demonstrator support provided by IITians to
                         guide students through their learning journey.
                       </p>
@@ -716,9 +718,9 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="md:w-full mt-8 md:mt-0  md:p md:pt-0 image-container  container mx-auto relative md:order-2">
+              <div className="md:w-full  md:mt-0  md:pt-0 image-container  container mx-auto relative md:order-2">
                 <Image
-                  className="relative z-50"
+                  className="relative z-50 md:-mt-28"
                   src="/assets/why choose us image.png"
                   alt="Image 2"
                   width={400}
@@ -726,7 +728,7 @@ export default function About() {
                   quality={95}
                 />
                 <Image
-                  className="absolute left-[50%] bottom-3 "
+                  className="absolute left-[48%] bottom-14 "
                   src={"/assets/Rectangle91.png"}
                   alt="Rectangle91"
                   width={80}
@@ -734,7 +736,7 @@ export default function About() {
                   quality={95}
                 />
                 <Image
-                  className="absolute left-[70%] -bottom-[10%] hidden md:block"
+                  className="absolute left-[70%] -bottom-[5%] hidden md:block"
                   src={"/assets/Ellipse46.png"}
                   alt="Ellipse46"
                   width={40}
@@ -757,27 +759,26 @@ export default function About() {
 
       {/* Explorer OUR MODEL */}
 
-      <div className="flex flex-col items-center md:flex-row justify-between pt-5 py-5 ">
-        <div className="flex flex-col gap-4 text-center md:text-left md:px-24 container mx-auto">
+      <div className="flex flex-col items-center md:flex-row justify-between py-5 max-md:-mt-10">
+        <div className="flex flex-col gap-4 text-center md:text-left md:px-24 container mx-auto pr-4 pl-4">
           <p className="text-[16px] md:text-[20px] font-semibold text-carrotColor">
             EXPLORE OUR MODELS
           </p>
-          <p className="text-border_color text-[25px] md:text-4xl font-bold flex flex-col max-md:text-center">
-            Enhance Science Lessons{" "}
-            <span className="flex items-center gap-2 max-md:pl-8">
-              with Engaging Models{" "}
-              <span className="hidden md:block">
-                <Image
-                  src={"/assets/Ellipse22_1.png"}
-                  alt="Ellipse22_1"
-                  width={15}
-                  height={15}
-                  quality={95}
-                />
-              </span>
-            </span>
-          </p>
-          <p className="text-[#342D6F] md:text-base text-[16px] max-md:text-pretty md:w-2/3">
+          <div className="md:w-1/2 relative max-md:-mt-2">
+            <p className="text-border_color text-[25px] md:text-4xl font-bold flex flex-col max-md:text-center md:max-2/3">
+              Enhance Science Lessons with Engaging Models
+            </p>
+            <div className="hidden md:block absolute bottom-2 left-[45%]">
+              <Image
+                src={"/assets/Ellipse22_1.png"}
+                alt="Ellipse22_1"
+                width={15}
+                height={15}
+                quality={95}
+              />
+            </div>
+          </div>
+          <p className="text-[#342D6F] md:text-base text-[16px] max-md:text-pretty md:w-2/3 max-md:text-center text-justify">
             Our science models are a great way to engage students in hands-on
             learning. Each model comes with a detailed teacher guide and student
             activity guides to help you make the most of your science lessons.
@@ -787,7 +788,7 @@ export default function About() {
 
       <Marquee speed={120} loop={0} pauseOnHover className="container mx-auto">
         <div className="flex items-center mx-6 flex-row gap-10">
-          <div>
+          <div className="max-md:w-40">
             <Image
               className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image1.png"
@@ -797,7 +798,7 @@ export default function About() {
               quality={95}
             />
           </div>
-          <div>
+          <div className="max-md:w-40">
             <Image
               className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image2.png"
@@ -807,7 +808,7 @@ export default function About() {
               quality={95}
             />
           </div>
-          <div>
+          <div className="max-md:w-40">
             <Image
               className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image3.png"
@@ -817,7 +818,7 @@ export default function About() {
               quality={95}
             />
           </div>
-          <div>
+          <div className="max-md:w-40">
             <Image
               className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image4.png"
@@ -827,7 +828,7 @@ export default function About() {
               quality={95}
             />
           </div>
-          <div>
+          <div className="max-md:w-40">
             <Image
               className="w-full h-full object-cover max-md:w-40"
               src="/assets/explore our models image5.png"
@@ -842,11 +843,11 @@ export default function About() {
 
       {/* hands-on science */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-[#342D6F] px-6 md:px-36 py-0 pb-10 mt-20 md:py-28 relative ">
-        <div className="flex flex-col-reverse container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-[#342D6F] px-6 md:px-36 py-0 pb-10 mt-10 md:py-28 relative max-md:pr-4 max-md:pl-4">
+        <div className="flex flex-col-reverse container mx-auto ">
           <div className="flex items-center pt-4 md:pt-0 space-y-5">
             <Image
-              className="w-full object-cover"
+              className="w-full object-cover "
               src="/assets/Rectangle 65.png"
               alt="Image 2"
               width={300}
@@ -892,33 +893,32 @@ export default function About() {
           />
         </div>
         <div className="flex flex-col justify-center gap-4 text-center md:text-left md:pl-20 space-y-5">
-          <p className="text-[#FFFFFF] font-bold text-4xl ">
-            Ready to engage your students in{" "}
-            <span className="flex items-center gap-2">
-              hands-on science learning?
-              <span className="md:block hidden">
-                <Image
-                  src={"/assets/Ellipse38_1.png"}
-                  alt="Ellipse38_1"
-                  width={15}
-                  height={15}
-                  quality={95}
-                />
-              </span>
-            </span>
-          </p>
-          <p className="text-[11px] md:text-[16px] md:leading-6 mt-2 md:mt-0 font-sans text-[#FFFFFF]">
+          <div className="relative pt-2 ">
+            <p className="text-[#FFFFFF] font-bold md:text-4xl text-[25px]">
+              Ready to engage your students in hands-on science learning?
+            </p>
+            <div className="md:block hidden absolute right-[60%] bottom-2">
+              <Image
+                src={"/assets/Ellipse38_1.png"}
+                alt="Ellipse38_1"
+                width={15}
+                height={15}
+                quality={95}
+              />
+            </div>
+          </div>
+          <p className="text-[11px] md:text-[16px] md:leading-6 mt-2 md:mt-0 font-sans text-[#FFFFFF] ">
             Jigyasu is a space for exploring science and technology, designed to
             spark curiosity and imagination. Our learning method is based on
             hands-on experience and dynamic visualization, embracing the
             philosophy of &quot;Learning by Doing.&quot;
           </p>
-          <p className="text-[11px] md:text-[16px] md:leading-6 pb-4 font-sans text-[#FFFFFF]">
+          <p className="text-[11px] md:text-[16px] md:leading-6 pb-4 font-sans text-[#FFFFFF] ">
             We bring raw science out of textbooks and into the physical
             experiences of students, nurturing the next generation of
             &quot;Graham Bells.&quot;
           </p>
-          <button className="btn bg-[#ED5251] mx-16 md:mx-0 w-auto justify-center md:justify-normal md:w-40 h-10 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full">
+          <button className="btn bg-[#ED5251] mx-16 md:mx-0 w-auto justify-center md:justify-normal md:w-40 h-10 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full ">
             Book Demo
           </button>
         </div>
@@ -1066,7 +1066,7 @@ export default function About() {
       {/* ------------------ ----------------*/}
       {/* ------------------Student Gallery ----------------*/}
 
-      <div className="flex flex-col items-center md:flex-row justify-between md:pt-20 py-10 pt-20 md:py-10 md:pl-16 ">
+      <div className="flex flex-col items-center md:flex-row justify-between md:pt-20 py-10 pt-5 md:py-10 md:pl-16 ">
         <div className="flex flex-col gap-4 text-center md:text-left px-6 md:px-24">
           <p className="text-[#ED5251] md:text-xl text-base font-semibold">
             OUR GALLERY
@@ -1236,7 +1236,7 @@ export default function About() {
 
       {/* -------------Our TESTIMONIAL------------------ */}
       {/* LARGE DEVICES */}
-      <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16 hidden md:block">
+      <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-5 hidden md:block">
         <div className="container mx-auto md:px-10 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
           <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
             <div className="flex flex-col gap-4 text-center md:text-left">
@@ -1362,7 +1362,7 @@ export default function About() {
       </div>
       {/* SMALL DEVICES */}
 
-      <div className="bg-[#FFDE95] bg-opacity-15 py-20 mt-16 md:hidden">
+      <div className="bg-[#FFDE95] bg-opacity-15 py-5 mt-8 md:hidden">
         <div className="container mx-auto md:px-10 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
           <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
             <div className="flex flex-col gap-4 text-center md:text-left relative">
@@ -1518,7 +1518,7 @@ export default function About() {
 
       {/* ------------Price Plan------------------- */}
 
-      <div className="bg-[#FFDE95] bg-opacity-15 py-5 flex flex-col items-center justify-center space-y-5">
+      <div className="bg-[#FFDE95] bg-opacity-15 pb-10 md:pb-20 flex flex-col items-center justify-center space-y-5 ">
         <div className="flex flex-col items-center justify-center space-y-1">
           <p className="text-carrotColor font-semibold md:text-xl text-base">
             OUR PRICING
@@ -1545,7 +1545,7 @@ export default function About() {
         </div>
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           {/* ------------------------STADARD-------------------------1 */}
-          <div className="border border-border_color relative rounded-2xl bg-white md:h-[70vh]">
+          <div className="border border-border_color relative rounded-2xl bg-white md:h-[70vh] lg:h-auto">
             <span className="text-3xl font-semibold bg-carrotColor text-white absolute top-0 rounded-tl-2xl px-5 py-1 mb-5">
               Standard
             </span>
@@ -1602,12 +1602,14 @@ export default function About() {
                 </li>
               </ul>
             </div>
-            <button className="bg-border_color px-6 py-2 rounded-full text-white my-5 mx-10 ">
-              Contact us
-            </button>
+            <div>
+              <button className="bg-border_color px-3 py-1 rounded-full text-white my-5 mx-10 text-[12px]   md:text-base">
+                Contact us
+              </button>
+            </div>
           </div>
           {/* -----------------CUSTOM---------------- 2*/}
-          <div className="border md:border-border_color border-carrotColor relative rounded-2xl bg-white md:h-[70vh]">
+          <div className="border md:border-border_color border-carrotColor relative rounded-2xl bg-white md:h-[70vh] lg:h-auto">
             <span className="text-3xl font-semibold bg-carrotColor text-white absolute top-0 rounded-tl-2xl mb-5 px-5 py-1">
               Custom
             </span>
@@ -1673,11 +1675,11 @@ export default function About() {
                 </li>
               </ul>
             </div>
-            <div className="my-5 mx-10 flex  items-center gap-5">
-              <button className="bg-[#EAE8FF] md:px-6 md:py-2 rounded-full text-[14px] md:text-base text-[#342D6F] font-semibold px-2 py-1">
+            <div className="my-7 mx-10 flex items-center flex-col sm:flex-row gap-2">
+              <button className="bg-[#EAE8FF] md:px-6 md:py-2 rounded-full text-[12px]   md:text-base text-[#342D6F] font-semibold px-3 py-1">
                 Calculate Budget
               </button>
-              <button className="bg-border_color md:px-6 md:py-2 rounded-full text-white text-[14px] md:text-base px-3 py-1">
+              <button className="bg-border_color md:px-6 md:py-2 rounded-full text-white text-[12px]  md:text-base px-3 py-1">
                 Contact us
               </button>
             </div>
