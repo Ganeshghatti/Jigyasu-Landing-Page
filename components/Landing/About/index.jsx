@@ -613,6 +613,15 @@ export default function About() {
 
       {/* Why Choose Us */}
       <div className="md:my-0 my-10 bg-cover bg-cream  py-5  md:py-24 bg-center bg-no-repeat w-full">
+        <div className="hidden lg:block">
+          <Image
+            src={"/assets/Rectangle12752.png"}
+            alt="Red"
+            width={35}
+            height={35}
+            quality={95}
+          />
+        </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:pl-32 md:text-left container mx-auto ">
           <div className="w-full">
             <p className="text-carrotColor md:text-[20px] text-base font-semibold">
@@ -622,7 +631,7 @@ export default function About() {
               <p className="md:w-1/2">
                 Unlock the Wonders of Science with Engaging Hands-On Learning
               </p>
-              <div className="hidden md:block absolute right-40 bottom-4 w-1/2">
+              <div className="hidden md:block absolute left-[33%] bottom-4 w-1/2">
                 <Image
                   src={"/assets/Ellipse22_1.png"}
                   alt="Ellipse22_1"
@@ -1646,7 +1655,7 @@ export default function About() {
       {/* ------------Price Plan------------------- */}
       <section
         id="pricing"
-        className="bg-[#FFDE95] bg-opacity-15 pb-10 md:pb-20 flex flex-col items-center justify-center space-y-5 pt-10 w-auto h-auto"
+        className="bg-[#FFDE95] bg-opacity-15 pb-10 md:pb-20 flex flex-col items-center justify-center space-y-5 pt-10 w-auto h-auto relative"
       >
         <div className="flex flex-col items-center justify-center space-y-1">
           <p className="text-carrotColor font-semibold md:text-xl text-base">
@@ -1814,7 +1823,39 @@ export default function About() {
             </div>
           </div>
         </div>
+        <div className="absolute right-0 hidden lg:block">
+          <Image
+            src={"/assets/Rectangle1151235.png"}
+            alt="Yellow"
+            width={120}
+            height={120}
+            quality={95}
+          />
+        </div>
+        <div className="absolute right-0 bottom-[33%] hidden lg:block">
+          <Image
+            src={"/assets/Ellipse103_Blue.png"}
+            alt="Yellow"
+            width={40}
+            height={40}
+            quality={95}
+          />
+        </div>
       </section>
+
+      {/* RED ELLIPSE */}
+
+      <div className="-ml-10 py-3 hidden lg:block">
+        <div>
+          <Image
+            src={"/assets/Rectangle114125.png"}
+            alt="Red Circle"
+            width={100}
+            height={100}
+            quality={95}
+          />
+        </div>
+      </div>
     </div>
   );
 }
