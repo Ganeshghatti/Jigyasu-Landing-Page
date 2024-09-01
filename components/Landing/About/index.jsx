@@ -203,7 +203,7 @@ export default function About() {
       </div>
 
       {/* WHO ARE WE ?  */}
-      <div className="flex flex-col-reverse md:px-5 md:flex-row justify-between items-center">
+      <div className="flex flex-col-reverse md:px-5 md:flex-row justify-between items-center md:mt-20">
         <div className="container mx-auto flex items-center flex-col md:flex-row gap-3">
           <div className="md:w-1/2 md:px-24 order-2 md:order-1 relative">
             <Image
@@ -216,7 +216,7 @@ export default function About() {
             />
           </div>
 
-          <div className="md:w-1/2 flex flex-col pb-1 md:pb-0 md:px-10 gap-1 justify-center md:justify-normal text-center md:text-left order-1 md:order-2">
+          <div className="md:w-1/2 flex flex-col pb-1 md:pb-0 md:px-10 gap-1 md:gap-3 justify-center md:justify-normal text-center md:text-left order-1 md:order-2">
             <p className="text-carrotColor text-base md:text-xl  font-semibold">
               WHO ARE WE?
             </p>
@@ -240,14 +240,14 @@ export default function About() {
               to spark curiosity and imagination. Our learning method is based
               on hands-on experience and dynamic visualization, embracing the
               philosophy of &quot;Learning by Doing.&quot;
-            </p>
+            </p><br/>
             <p className="md:text-[16px] text-[12px] md:pr-20 pb-4 font-sans text-[#342D6F]">
               We bring raw science out of textbooks and into the physical
               experiences of students, nurturing the next generation of
               &quot;Graham Bells.&quot;
             </p>
             <div>
-              <button className="md:text-base sm:text-[14px] text-[12px] bg-carrotColor text-white px-4 py-2 rounded-full">
+              <button className="md:text-base font-semibold sm:text-[14px] text-[12px] bg-carrotColor text-white px-10 py-2 rounded-full">
                 Know More
               </button>
             </div>
@@ -256,10 +256,10 @@ export default function About() {
       </div>
 
       {/* -------------------OUR PHILOSOPHY---------------------- */}
-      <div className="container mx-auto md:px-24 mb-8 my-2 bg-cover bg-cream bg-center bg-no-repeat">
+      <div className="container mx-auto md:px-24 mb-8 my-2 bg-cover bg-cream bg-center bg-no-repeat mt-12 md:mt-0">
         <div className="flex flex-col items-center md:flex-row justify-between py-8 md:px-4 md:py-20">
           <div className="flex flex-col gap-1 text-center md:text-left">
-            <p className="text-[#ED5251] font-semibold text-base md:text-xl">
+            <p className="text-[#ED5251] font-bold text-base md:text-lg">
               OUR PHILOSOPHY
             </p>
             <p className="text-border_color text-[25px]  md:text-4xl font-bold flex flex-col max-md:items-center max-md:-mt-1">
@@ -288,7 +288,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-2 md:mt-0">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-2 md:mt-0">
           <div className="flex flex-col items-center">
             <Image
               className="rounded-2xl"
@@ -346,7 +346,7 @@ export default function About() {
       {/* RECOGNIZED BY */}
       <div className="bg-[#FFE8E8] flex flex-col gap-5 justify-center md:flex-row items-center md:p-10 p-5 ">
         <div className="md:w-1/2 w-2/3 text-center">
-          <p className="text-xl md:text-3xl uppercase text-border_color font-bold md:font-semibold max-md:hidden">
+          <p className="text-xl md:text-2xl uppercase text-border_color font-bold md:font-bold max-md:hidden">
             RECOGNIZED BY
           </p>
         </div>
@@ -389,9 +389,9 @@ export default function About() {
       {/* Challenges We Address */}
       <div className="md:py-20 mt-10 relative bg-[#F5F5F5] overflow-hidden">
         <div className="container mx-auto flex flex-col space-y-1 max-md:flex-wrap">
-          <div className="">
+          <div className="mb-8">
             <div className="space-y-3 max-md:text-center">
-              <h4 className="text-carrotColor font-semibold md:text-xl max-md:text-center uppercase">
+              <h4 className="text-carrotColor font-bold md:text-lg max-md:text-center uppercase">
                 Challenges We Address
               </h4>
               <p className="text-border_color  md:text-4xl text-[25px] font-bold flex flex-col max-md:text-center">
@@ -624,10 +624,10 @@ export default function About() {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:pl-32 md:text-left container mx-auto ">
           <div className="w-full">
-            <p className="text-carrotColor md:text-[20px] text-base font-semibold">
+            <p className="text-carrotColor md:text-lg text-base font-bold">
               WHY CHOOSE US
             </p>
-            <div className="md:text-4xl text-[25] py-2 text-[#342D6F] flex flex-col font-bold max-md:text-center capitalize relative max-md:-mb-5">
+            <div className="md:text-4xl text-[25px] py-2 text-[#342D6F] flex flex-col font-bold max-md:text-center capitalize relative max-md:-mb-5">
               <p className="md:w-1/2">
                 Unlock the Wonders of Science with Engaging Hands-On Learning
               </p>
@@ -647,7 +647,7 @@ export default function About() {
                   <div className="flex flex-row">
                     <div className=" px-2 md:px-3 pt-1">
                       <FaCheck
-                        size={26}
+                        size={20}
                         className="bg-border_color text-white p-1 rounded-full"
                       />
                     </div>
@@ -665,7 +665,7 @@ export default function About() {
                   <div className="flex flex-row">
                     <div className=" px-2 md:px-3 pt-1">
                       <FaCheck
-                        size={26}
+                        size={20}
                         className="bg-border_color text-white p-1 rounded-full"
                       />
                     </div>
@@ -682,7 +682,7 @@ export default function About() {
                   <div className="flex flex-row">
                     <div className=" px-2 md:px-3 pt-1">
                       <FaCheck
-                        size={26}
+                        size={20}
                         className="bg-border_color text-white p-1 rounded-full"
                       />
                     </div>
@@ -701,7 +701,7 @@ export default function About() {
                   <div className="flex flex-row">
                     <div className=" px-2 md:px-3 pt-1">
                       <FaCheck
-                        size={26}
+                        size={20}
                         className="bg-border_color text-white p-1 rounded-full"
                       />
                     </div>
@@ -718,7 +718,7 @@ export default function About() {
                   <div className="flex flex-row">
                     <div className=" px-2 md:px-3 pt-1">
                       <FaCheck
-                        size={26}
+                        size={20}
                         className="bg-border_color text-white p-1 rounded-full"
                       />
                     </div>
@@ -778,7 +778,7 @@ export default function About() {
       {/* Explorer OUR MODEL */}
       <div className="flex flex-col items-center md:flex-row justify-between py-5 max-md:-mt-10">
         <div className="flex flex-col gap-4 text-center md:text-left md:px-24 container mx-auto pr-4 pl-4">
-          <p className="text-[16px] md:text-[20px] font-semibold text-carrotColor">
+          <p className="text-[16px] md:text-lg font-bold text-carrotColor">
             EXPLORE OUR MODELS
           </p>
           <div className="md:w-1/2 relative max-md:-mt-2">
@@ -802,7 +802,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <Marquee speed={120} loop={0} pauseOnHover className="container mx-auto">
+      <Marquee speed={120} loop={0} pauseOnHover className="container mx-auto md:mt-8">
         <div className="flex items-center mx-6 flex-row gap-10">
           <div className="max-md:w-40">
             <Image
@@ -858,7 +858,7 @@ export default function About() {
       </Marquee>
 
       {/* hands-on science */}
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-[#342D6F] px-6 md:px-36 py-0 pb-10 mt-10 md:py-28 relative max-md:pr-4 max-md:pl-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-[#342D6F] px-6 md:px-36 py-16 pb-10 mt-10 md:py-28 relative max-md:pr-4 max-md:pl-4">
         <div className="flex flex-col-reverse container mx-auto ">
           <div className="flex max-md:flex-col items-center pt-4 md:pt-0 space-y-5">
             <div>
@@ -912,7 +912,7 @@ export default function About() {
             quality={95}
           />
         </div>
-        <div className="flex flex-col justify-center gap-4 text-center md:text-left md:pl-20 space-y-5">
+        <div className="flex flex-col justify-center gap-0 md:gap-4 text-center md:text-left md:pl-20 space-y-5">
           <div className="relative pt-2 ">
             <p className="text-[#FFFFFF] font-bold md:text-4xl text-[25px] max-md:hidden">
               Ready to engage your students in hands-on science learning?
@@ -939,7 +939,7 @@ export default function About() {
             &quot;Graham Bells.&quot;
           </p>
           <div className="w-full">
-            <button className="btn bg-[#ED5251] px-5 py-2 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full ">
+            <button className="btn bg-[#ED5251] px-8 py-2 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full font-semibold">
               Book Demo
             </button>
           </div>
@@ -996,7 +996,7 @@ export default function About() {
                   </ul>
                 </div>
               </div>
-              <button className="btn hidden md:block bg-[#ED5251] mx-16 md:mx-0 md:mt-10 w-auto justify-center md:justify-normal md:w-40 h-10 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full">
+              <button className="btn hidden md:block bg-[#ED5251] mx-16 md:mx-0 md:mt-10 w-auto justify-center md:justify-normal md:w-40 h-10 text-white border-none hover:bg-stone-50 hover:text-black capitalize rounded-full font-semibold">
                 Contact us
               </button>
             </div>
@@ -1015,9 +1015,9 @@ export default function About() {
       </div>
 
       {/* ------------------Student Gallery ----------------*/}
-      <div className="flex flex-col items-center md:flex-row justify-between md:pt-20 py-10 pt-5 md:py-10 md:pl-16">
+      <div className="flex flex-col items-center md:flex-row justify-between md:pt-20 py-16 md:pt-5 md:py-10 md:pl-16">
         <div className="flex flex-col gap-4 text-center md:text-left px-6 md:px-24">
-          <p className="text-[#ED5251] md:text-xl text-base font-semibold">
+          <p className="text-[#ED5251] md:text-lg text-base font-bold">
             OUR GALLERY
           </p>
           <div className="md:w-1/3 relative">
@@ -1376,7 +1376,7 @@ export default function About() {
         <div className="container mx-auto md:px-10 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
           <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
             <div className="flex flex-col gap-4 text-center md:text-left">
-              <p className="text-[#ED5251] font-semibold text-xl">
+              <p className="text-[#ED5251] font-bold text-base md:text-lg">
                 OUR TESTIMONIAL
               </p>
               <p className="text-[#342D6F] font-bold text-4xl flex items-center gap-2">
@@ -1500,9 +1500,9 @@ export default function About() {
 
       <div className="bg-[#D9D9D9] bg-opacity-15 py-5 mt-8 md:hidden">
         <div className="container mx-auto md:px-10 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
-          <div className="flex flex-col items-center md:flex-row justify-between pb-10 md:px-4 md:pb-20 ">
+          <div className="flex flex-col items-center md:flex-row  justify-between pb-10 md:px-4 md:pb-20 ">
             <div className="flex flex-col gap-4 text-center md:text-left relative">
-              <p className="text-[#ED5251] font-semibold md:text-xl text-base">
+              <p className="text-[#ED5251] font-bold text-base md:text-lg">
                 OUR TESTIMONIAL
               </p>
               <p className="text-[#342D6F] font-bold md:text-4xl text-[25px]">
@@ -1657,8 +1657,8 @@ export default function About() {
         id="pricing"
         className="bg-[#FFDE95] bg-opacity-15 pb-10 md:pb-20 flex flex-col items-center justify-center space-y-5 pt-10 w-auto h-auto relative"
       >
-        <div className="flex flex-col items-center justify-center space-y-1">
-          <p className="text-carrotColor font-semibold md:text-xl text-base">
+        <div className="flex flex-col items-center justify-center space-y-1 mb-8">
+          <p className="text-carrotColor font-bold md:text-lg text-base">
             OUR PRICING
           </p>
           <div className="flex items-center gap-1">
@@ -1687,23 +1687,23 @@ export default function About() {
             <span className="md:text-3xl text-[22px] font-semibold bg-carrotColor text-white absolute top-0 rounded-tl-2xl px-5 py-1 mb-5">
               Standard
             </span>
-            <div className="md:border-b border-border_color/10 md:px-5 md:py-5 px-2 py-1 text-[14px] ">
-              <h3 className="text-border_color mt-14 py-5">
+            <div className="md:border-b border-border_color/10 md:px-5 md:py-5 px-2 py-1 text-[14px] mb-6 md:mb-0">
+              <h3 className="text-border_color mt-14 py-0 md:py-5">
                 Lorem ipsum dolor sit amet consectetur. Netus amet morbi cursus
                 egestas at ut elit. Id nec metus pharetra sit at nam.
               </h3>
-              <h1 className="text-carrotColor text-4xl font-bold max-md:text-center">
+              <h1 className="text-carrotColor text-5xl font-bold max-md:text-center mt-4 md:0">
                 ₹1000<span className="text-border_color text-xs">/STUDENT</span>
               </h1>
             </div>
-            <div className="flex flex-col items-start justify-start md:space-y-3  py-5 px-2 md:px-5 text-border_color space-y-2">
+            <div className="flex flex-col items-start justify-start md:space-y-3 py-0 md:py-5 px-2 md:px-5 text-border_color space-y-2">
               <div className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
                 <span className="text-slate-500 bg-slate-100 p-1 ">
                   <FaCheck />
                 </span>
                 <span>Experiments with hands-on Learning Curriculum</span>
               </div>
-              <ul className="list-disc md:px-5 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
+              <ul className="list-disc md:px-5 px-2 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
                 <li className="text-[14px]">Experiments on Subscription</li>
                 <li className="text-[14px]">Hands-on learning curriculum</li>
                 <li className="text-[14px]">Repair and maintenance.</li>
@@ -1714,7 +1714,7 @@ export default function About() {
                 </span>
                 Jigyasu curriculam
               </div>
-              <ul className="list-disc md:px-5 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
+              <ul className="list-disc md:px-5 px-2 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
                 <li className="text-[14px]">
                   A Trained Demonstrator/Science Communicator/Teacher to provide
                   visualisation of these concepts and smooth running of the
@@ -1727,7 +1727,7 @@ export default function About() {
                 </span>
                 Jigyasu Program Management
               </div>
-              <ul className="list-disc md:px-5 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
+              <ul className="list-disc md:px-5 px-2 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
                 <li className="text-[14px]">
                   Program monitoring and weekly status report.
                 </li>
@@ -1740,8 +1740,8 @@ export default function About() {
                 </li>
               </ul>
             </div>
-            <div className="flex items-center justify-center py-5 my-4">
-              <button className="bg-border_color px-3 py-2 rounded-full text-white text-[14px] md:text-[16px]">
+            <div className="flex items-center justify-center py-5 my-0 md:my-4">
+              <button className="bg-[#342D6F] px-8 py-3 rounded-full text-white text-[14px] md:text-[16px] font-semibold">
                 Contact us
               </button>
             </div>
@@ -1752,19 +1752,19 @@ export default function About() {
               Custom
             </span>
             <div className="md:border-b border-border_color/10 md:px-5 md:py-5 px-2 py-1 text-[14px] ">
-              <h3 className="text-border_color mt-14 py-5">
+              <h3 className="text-border_color mt-14 py-0 md:py-5">
                 Lorem ipsum dolor sit amet consectetur. Netus amet morbi cursus
                 egestas at ut elit. Id nec metus pharetra sit at nam.
               </h3>
             </div>
-            <div className="flex flex-col items-start justify-start md:space-y-3  py-5 px-2 md:px-5 text-border_color space-y-2">
+            <div className="flex flex-col items-start justify-start md:space-y-3 py-3 md:py-5 px-2 md:px-5 text-border_color space-y-1">
               <div className="flex items-center gap-2 font-semibold md:text-base text-[14px]">
                 <span className="text-slate-500 bg-slate-100 p-1 ">
                   <FaCheck />
                 </span>
                 <span>Experiments with hands-on Learning Curriculum</span>
               </div>
-              <ul className="list-disc md:px-5 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
+              <ul className="list-disc md:px-5 px-2 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
                 <li className="text-[14px]">Experiments on Subscription</li>
                 <li className="text-[14px]">Hands-on learning curriculum</li>
                 <li className="text-[14px]">Repair and maintenance.</li>
@@ -1775,7 +1775,7 @@ export default function About() {
                 </span>
                 Jigyasu curriculam
               </div>
-              <ul className="list-disc md:px-5 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
+              <ul className="list-disc md:px-5 px-2 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
                 <li className="text-[14px]">
                   A Trained Demonstrator/Science Communicator/Teacher to provide
                   visualisation of these concepts and smooth running of the
@@ -1788,7 +1788,7 @@ export default function About() {
                 </span>
                 Jigyasu Program Management
               </div>
-              <ul className="list-disc md:px-5 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
+              <ul className="list-disc md:px-5 px-2 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
                 <li className="text-[14px]">
                   Program monitoring and weekly status report.
                 </li>
@@ -1806,18 +1806,18 @@ export default function About() {
                 </span>
                 Maintenance & Support
               </div>
-              <ul className="list-disc md:px-5 custom-marker flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
+              <ul className="list-disc md:px-5 custom-marker px-2 flex flex-col items-start max-md:ml-5 justify-center max-md:pb-5">
                 <li className="text-[14px]">
                   Jigyasu will provide repair & Maintenance for the equipment
                   provided in the Science Studio
                 </li>
               </ul>
             </div>
-            <div className="flex items-center justify-center gap-4 py-5">
-              <button className="bg-[#EAE8FF]  px-3 py-2 rounded-full text-[#342D6F] text-[14px] md:text-[16px]">
+            <div className="flex items-center justify-center gap-4 pb-5 md:py-5">
+              <button className="bg-[#EAE8FF]  px-5 py-3 rounded-full text-[#342D6F] font-semibold text-[14px] md:text-[16px]">
                 Calculate Budget
               </button>
-              <button className="bg-border_color  px-3 py-2 rounded-full text-white text-[14px] md:text-[16px]">
+              <button className="bg-border_color  px-5 py-3 rounded-full text-white text-[14px] md:text-[16px]">
                 Contact us
               </button>
             </div>
