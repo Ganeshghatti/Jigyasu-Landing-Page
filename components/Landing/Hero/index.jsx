@@ -36,7 +36,7 @@ export default function Hero() {
             Book Demo
           </button>
         </div>
-        <div className="absolute overflow-hidden hidden md:block top-0 right-0   md:mt-6 md:mr-0 ">
+        <div className="absolute overflow-hidden top-0 right-0   md:mt-6 md:mr-0 ">
           <Image
             className="w-12  md:w-full md:pt-36 "
             src="/assets/Ellipse 23.png"
@@ -45,7 +45,24 @@ export default function Hero() {
             height={500} // specify the height
           />
         </div>
-
+        <div className="absolute overflow-hidden top-15 left-0 hidden md:block  md:mt-6 md:mr-0 ">
+          <Image
+            className="w-12  md:w-full md:pt-36 "
+            src="/assets/Rectangle 83.png"
+            alt="Rectangle 83 image"
+            width={500} // specify the width
+            height={500} // specify the height
+          />
+        </div>
+        <div className="absolute overflow-hidden top-0 hidden md:block left-0   md:mt-6 md:mr-0 ">
+          <Image
+            className="w-12  md:w-full md:pt-36 "
+            src="/assets/Ellipse 27.png"
+            alt="Ellipse 27 image"
+            width={500} // specify the width
+            height={500} // specify the height
+          />
+        </div>
         <div className="relative  md:mt-0 md:ml-10 flex justify-center items-center">
           <div className="relative">
             {/* Blue Dot Image */}
