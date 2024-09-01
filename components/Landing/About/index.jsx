@@ -240,7 +240,8 @@ export default function About() {
               to spark curiosity and imagination. Our learning method is based
               on hands-on experience and dynamic visualization, embracing the
               philosophy of &quot;Learning by Doing.&quot;
-            </p><br/>
+            </p>
+            <br />
             <p className="md:text-[16px] text-[12px] md:pr-20 pb-4 font-sans text-[#342D6F]">
               We bring raw science out of textbooks and into the physical
               experiences of students, nurturing the next generation of
@@ -746,7 +747,7 @@ export default function About() {
                   />
                 </div>
                 <Image
-                  className="absolute left-[48%] bottom-14 "
+                  className="absolute left-[30%] bottom-9"
                   src={"/assets/Rectangle91.png"}
                   alt="Rectangle91"
                   width={80}
@@ -754,15 +755,15 @@ export default function About() {
                   quality={95}
                 />
                 <Image
-                  className="absolute left-[70%] -bottom-[5%] hidden md:block"
+                  className="absolute left-[48%] bottom-[2%] hidden md:block"
                   src={"/assets/Ellipse46.png"}
                   alt="Ellipse46"
-                  width={40}
-                  height={40}
+                  width={30}
+                  height={30}
                   quality={95}
                 />
                 <Image
-                  className="absolute bottom-0 -left-3 hidden md:block z-[10000]"
+                  className="absolute -bottom-1 -left-[12%] hidden md:block z-[10000]"
                   src={"/assets/2label_1.png"}
                   alt="Label"
                   width={300}
@@ -776,7 +777,10 @@ export default function About() {
       </div>
 
       {/* Explorer OUR MODEL */}
-      <div className="flex flex-col items-center md:flex-row justify-between py-5 max-md:-mt-10">
+      <section
+        id="products"
+        className="flex flex-col items-center md:flex-row justify-between py-5 max-md:-mt-10"
+      >
         <div className="flex flex-col gap-4 text-center md:text-left md:px-24 container mx-auto pr-4 pl-4">
           <p className="text-[16px] md:text-lg font-bold text-carrotColor">
             EXPLORE OUR MODELS
@@ -801,8 +805,13 @@ export default function About() {
             activity guides to help you make the most of your science lessons.
           </p>
         </div>
-      </div>
-      <Marquee speed={120} loop={0} pauseOnHover className="container mx-auto md:mt-8">
+      </section>
+      <Marquee
+        speed={120}
+        loop={0}
+        pauseOnHover
+        className="container mx-auto md:mt-8"
+      >
         <div className="flex items-center mx-6 flex-row gap-10">
           <div className="max-md:w-40">
             <Image
@@ -1015,7 +1024,10 @@ export default function About() {
       </div>
 
       {/* ------------------Student Gallery ----------------*/}
-      <div className="flex flex-col items-center md:flex-row justify-between md:pt-20 py-16 md:pt-5 md:py-10 md:pl-16">
+      <section
+        id="events"
+        className="flex flex-col items-center md:flex-row justify-between md:pt-20 py-16 md:pt-5 md:py-10 md:pl-16"
+      >
         <div className="flex flex-col gap-4 text-center md:text-left px-6 md:px-24">
           <p className="text-[#ED5251] md:text-lg text-base font-bold">
             OUR GALLERY
@@ -1040,7 +1052,7 @@ export default function About() {
             activity guides to help you make the most of your science lessons.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* --------------SLIDER GALLERY----------------- */}
       {/* MOBILE */}
@@ -1497,7 +1509,6 @@ export default function About() {
               
       </div>
       {/* SMALL DEVICES */}
-
       <div className="bg-[#D9D9D9] bg-opacity-15 py-5 mt-8 md:hidden">
         <div className="container mx-auto md:px-10 mt-10 bg-cover bg-cream bg-center bg-no-repeat">
           <div className="flex flex-col items-center md:flex-row  justify-between pb-10 md:px-4 md:pb-20 ">
@@ -1844,7 +1855,6 @@ export default function About() {
       </section>
 
       {/* RED ELLIPSE */}
-
       <div className="-ml-10 py-3 hidden lg:block">
         <div>
           <Image
