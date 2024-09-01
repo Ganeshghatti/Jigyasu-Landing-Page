@@ -885,7 +885,7 @@ export default function About() {
             quality={95}
           />
         </div>
-        <div className="absolute top-8 md:hidden">
+        <div className="absolute -top-8 md:hidden">
           <Image
             src="/assets/Ellipse5612.png"
             alt="ping yellow"
