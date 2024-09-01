@@ -1039,10 +1039,16 @@ export default function About() {
         <Swiper
           slidesPerView={1}
           spaceBetween={0}
+          loop={true}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -1177,12 +1183,18 @@ export default function About() {
         <Swiper
           slidesPerView={5}
           spaceBetween={3}
+          loop={true}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           freeMode={true}
           navigation={true}
           pagination={{
             clickable: true,
           }}
-          modules={[FreeMode, Pagination, Navigation]}
+          modules={[FreeMode, Pagination, Navigation, Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
