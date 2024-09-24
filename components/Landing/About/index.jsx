@@ -1693,7 +1693,6 @@ export default function About() {
           </p>
         </div>
         <div className="md:container md:mx-auto flex flex-col md:flex-row items-center justify-between gap-10 max-md:px-2">
-          {/* ------------------------STADARD-------------------------1 */}
           <div className="border border-border_color relative rounded-2xl bg-white w-auto h-auto">
             <span className="md:text-3xl text-[22px] font-semibold bg-carrotColor text-white absolute top-0 rounded-tl-2xl px-5 py-1 mb-5">
               Standard
@@ -1757,7 +1756,6 @@ export default function About() {
               </button>
             </div>
           </div>
-          {/* -----------------CUSTOM---------------- 2*/}
           <div className="border border-carrotColor relative rounded-2xl bg-white w-auto h-auto">
             <span className="md:text-3xl text-[22px] font-semibold bg-carrotColor text-white absolute top-0 rounded-tl-2xl px-5 py-1 mb-5">
               Custom
