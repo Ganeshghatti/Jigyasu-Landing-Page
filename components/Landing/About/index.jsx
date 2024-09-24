@@ -1664,7 +1664,7 @@ export default function About() {
       </div>
 
       {/* ------------Price Plan------------------- */}
-      <section
+      {/* <section
         id="pricing"
         className="bg-[#FFDE95] bg-opacity-15 pb-10 md:pb-20 flex flex-col items-center justify-center space-y-5 pt-10 w-auto h-auto relative"
       >
@@ -1852,7 +1852,7 @@ export default function About() {
             quality={95}
           />
         </div>
-      </section>
+      </section> */}
 
       {/* RED ELLIPSE */}
       <div className="-ml-10 py-3 hidden lg:block">
