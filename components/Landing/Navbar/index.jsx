@@ -51,12 +51,12 @@ export default function Navbar() {
                   ))}
                 </div>
                 <div className="gap-5 hidden lg:flex items-center ">
-                  <Link
+                  {/* <Link
                     href={"#pricing"}
                     className="border border-border_color font-bold py-1 px-6 rounded-full text-md md:text-sm text-border_color"
                   >
                     Pricing
-                  </Link>
+                  </Link> */}
                   <button className="bg-carrotColor  hover:bg-carrotColor_hover text-white font-bold py-1 border border-carrotColor px-4 rounded-full text-md md:text-sm">
                     Book Demo
                   </button>
